@@ -1,0 +1,56 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/components/ArticleViewItem.qml</file>
+        <file>qml/components/ActionIcon.qml</file>
+        <file>qml/components/GoogleFeedApi.qml</file>
+        <file>qml/components/GridModeItem.qml</file>
+        <file>qml/components/ListModeItem.qml</file>
+        <file>qml/components/NetworkManager.qml</file>
+        <file>qml/components/OptionsKeeper.qml</file>
+        <file>qml/components/OrganicGrid.qml</file>
+        <file>qml/components/ReadingOptions.qml</file>
+        <file>qml/delegates/ArticleFullImg.qml</file>
+        <file>qml/delegates/ArticleOneImgA.qml</file>
+        <file>qml/delegates/ArticleTextA.qml</file>
+        <file>qml/delegates/ArticleTextB.qml</file>
+        <file>qml/pages/AppendFeedPage.qml</file>
+        <file>qml/pages/ArticleViewPage.qml</file>
+        <file>qml/pages/ChooseTopicPage.qml</file>
+        <file>qml/pages/CreateTopicPage.qml</file>
+        <file>qml/pages/EditFeedPage.qml</file>
+        <file>qml/pages/FeedComponent.qml</file>
+        <file>qml/pages/MainPage.qml</file>
+        <file>qml/pages/TopicComponent.qml</file>
+        <file>qml/pages/TopicManagementPage.qml</file>
+        <file>qml/tabs/BaseTab.qml</file>
+        <file>qml/tabs/SavedTab.qml</file>
+        <file>qml/tabs/ShortsTab.qml</file>
+        <file>qml/tabs/TopicTab.qml</file>
+        <file>qml/utils/databasemodule_v2.js</file>
+        <file>qml/utils/dateutils.js</file>
+        <file>qml/utils/imgSeparator.js</file>
+        <file>qml/shorts-app.qml</file>
+        <file>qml/content/SharePage.qml</file>
+        <file>qml/components/DarkModeShader.qml</file>
+        <file>qml/nongoogle/XmlNetwork.qml</file>
+        <file>qml/nongoogle/AppendNGFeedPage.qml</file>
+        <file>qml/pages/SettingsPage.qml</file>
+        <file>qml/nongoogle/Positioner.qml</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>qml/icons/add.svg</file>
+        <file>qml/icons/back.svg</file>
+        <file>qml/icons/compose.svg</file>
+        <file>qml/icons/dash-home.svg</file>
+        <file>qml/icons/edit.svg</file>
+        <file>qml/icons/favorite-selected.svg</file>
+        <file>qml/icons/favorite-unselected.svg</file>
+        <file>qml/icons/find.svg</file>
+        <file>qml/icons/go-to.svg</file>
+        <file>qml/icons/reload.svg</file>
+        <file>qml/icons/settings.svg</file>
+        <file>qml/icons/share.svg</file>
+        <file>qml/icons/view-fullscreen.svg</file>
+        <file>qml/icons/view-restore.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Shorts Reboot
+Exec=shorts
+Icon=shorts.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+

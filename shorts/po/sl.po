@@ -1,0 +1,293 @@
+# Slovenian translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-10-06 06:56+0000\n"
+"Last-Translator: Damir Jerovšek <Unknown>\n"
+"Language-Team: Slovenian <sl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Izberite članek"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Shrani"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Odstrani"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Možnosti"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Odpri mesto"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "Ni člankov za prikaz"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "Temna"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "Svetla"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Majhno"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Srednje"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Veliko"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d. MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "Včeraj ob %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "h:mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, h:mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "Pred nekaj sekundami ..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "pred %1 minutami"
+msgstr[1] "pred %1 minuto"
+msgstr[2] "pred %1 minutama"
+msgstr[3] "pred %1 minutami"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "Pred %1 urami"
+msgstr[1] "pred %1 uro"
+msgstr[2] "pred %1 urama"
+msgstr[3] "pred %1 urami"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "pred %1 dnevi"
+msgstr[1] "pred %1 dnevom"
+msgstr[2] "pred %1 dnevoma"
+msgstr[3] "pred %1 dnevi"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Dodaj vire"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Izvedba iskanja vira s ključno besedo je spodletela"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Iskanje je spodletelo"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "Izvedba iskanja vira s z naslovom URL je spodletela"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Vnesite ključno besedo ali URL"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Rezultati iskanja"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Naslednja"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "Ni virov"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Izberite temo"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Dodajte nove vire v temo"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + Nova tema"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Tema s tem imenom že obstaja"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Opozorilo"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "Ime teme ne sme vsebovati samo presledkov"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Ustvari novo temo"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Dodaj temo"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Vnesite ime teme"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Izberite vire (izbirno)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Uredi vir"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Končano"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Naslov: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Tema: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Dodaj temo"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Potrdi"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Dodaj vir"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Osveži"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Mrežni pogled"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Seznamski pogled"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Shranjeno"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Na kratko"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "Preverjanje za nove članke"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "Nekateri kanali mogoče niso bili posodobljeni."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Med posodabljanjem so se pojavile napake"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ Dodaj vire"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Dodaj spletne račune"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Spletni računi trenutno niso na voljo"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Oprostite"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Uvozi naročnine"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "Uvažanje naročnin trenutno ni na voljo"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "V redu"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "shorts;rss;bralnik;"

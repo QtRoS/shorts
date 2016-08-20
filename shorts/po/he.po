@@ -1,0 +1,286 @@
+# Hebrew translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-12-23 13:16+0000\n"
+"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "בחירת כתבה"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "שמירה"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "הסרה"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "אפשרויות"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "פתיחת האתר"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "אין ערכים להצגה"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "כהה"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "בהיר"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "קטנה"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "בינונית"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "גדולה"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "ה־d בMMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "אתמול בשעה %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "h:mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, h:mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "לפני מספר שניות…"
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "לפני דקה %1"
+msgstr[1] "לפני %1 דקות"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "לפני שעה %1"
+msgstr[1] "לפני %1 שעות"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "לפני יום %1"
+msgstr[1] "לפני %1 ימים"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "הוספת הזנות"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "חיפוש הזנות לפי מילת מפתח נכשל"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "החיפוש נכשל"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "חיפוש הזנות לפי כתובת נכשל"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "נא להזין מילת מפתח או כתובת"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "תוצאות חיפוש"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "ביטול"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "הבא"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "אין הזנות"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "בחירת נושא"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "הוספת ההזנות החדשות שלך לנושא"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + נושא חדש"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "נושא בשם זה כבר קיים"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "אזהרה"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "שם הנושא לא יכול להכיל רווחים בלבד"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "יצירת נושא חדש"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "הוספת נושא"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "הזנת שם נושא"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "בחירת הזנות (רשות)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "עריכת הזנה"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "הסתיים"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "כותרת: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "כתובת: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "נושא: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "עריכת הנושאים"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "אישור"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "הוספת הזנה"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "רענון"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "תצוגת משבצות"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "תצוגת רשימה"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "נשמר"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "קיצורים"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "מתבצע חיפוש אחר ערכים חדשים"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "כנראה שחלק מהערוצים לא עודכנו."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "התרחשו שגיאות במהלך העדכון"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ הוספת הזנות"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "הוספת חשבונות מקוונים"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "חשבונות מקוונים אינם זמינים כרגע"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "עמך הסליחה"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "יבוא מינויים"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "לא ניתן לייבא הרשמות כרגע"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "אישור"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr ""

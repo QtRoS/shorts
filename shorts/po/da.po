@@ -1,0 +1,288 @@
+# Danish translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+#
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-08-07 14:43+0000\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Vælg artikel"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Gem"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Fjern"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Indstillinger"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Åbn side"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "Der er ingen artikler at vise"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr ""
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr ""
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Lille"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Mellem"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Stor"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d'.' MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "I går %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "h:mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, h:mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "For nogle sekunder siden..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 minut siden"
+msgstr[1] "%1 minutter siden"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 time siden"
+msgstr[1] "%1 timer siden"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 dag siden"
+msgstr[1] "%1 dage siden"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Tilføj kilder"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Kunne ikke foretage kildesøgning efter nøgleord"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Søgning mislykkedes"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "Kunne ikke udføre kildesøgning efter URL"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Skriv nøgleord eller URL"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Søgeresultater"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Annullér"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Næste"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "Ingen kilder"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Vælg emne"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Føj dine nye kilder til et emne"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + Nyt emne"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Der findes allerede et emne med dette navn"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Advarsel"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "Emnenavnet må ikke kun indeholde blanke tegn"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Opret nyt emne"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Tilføj emne"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Skriv emnenavn"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Vælg kilder (valgfri)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Redigér kilde"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Færdig"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Titel: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Emne: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Redigér emner"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Bekræft"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Tilføj kilde"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Genindlæs"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Gittervisning"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Listevisning"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Gemt"
+
+# navnet på programmet
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Shorts"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "Kigger efter nye artikler"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "Måske er nogle af kanalerne ikke blevet opdateret."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Der opstod fejl under opdateringen"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ Tilføj kilder"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Tilføj onlinekonti"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Onlinekonti er ikke tilgængelige lige nu"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Vi beklager"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Importér abonnementer"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "Import af abonnementer er ikke tilgængelig lige nu"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "O.k."
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr ""

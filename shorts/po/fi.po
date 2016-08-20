@@ -1,0 +1,287 @@
+# Finnish translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2015-04-23 08:09+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Valitse artikkeli"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Tallenna"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Poista"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Valinnat"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Avaa sivusto"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "Ei artikkeleita näytettäväksi"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "Tumma"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "Vaalea"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Pieni"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Keski"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Suuri"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d. MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "Eilen %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "H.mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, H.mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "Muutama sekunti sitten..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 minuutti sitten"
+msgstr[1] "%1 minuuttia sitten"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 tunti sitten"
+msgstr[1] "%1 tuntia sitten"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 päivä sitten"
+msgstr[1] "%1 päivää sitten"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Lisää syötteitä"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Hakusanalla ei tuloksia"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Haku epäonnistui"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "URL-syötteen haku epäonnistui"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Kirjoita hakusana tai verkko-osoite"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Hakutulokset"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Peru"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Seuraava"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "Ei syötteitä"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Valitse aihe"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Lisää uudet syötteesi aiheeseen"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + Uusi aihe"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Samalla nimellä oleva aihe on jo olemassa"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Varoitus"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "Aihe ei voi sisältää pelkästään välilyöntejä"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Luo uusi aihe"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Lisää aihe"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Kirjoita aiheen nimi"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Valitse syötteet (valinnainen)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Muokkaa syötettä"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Valmis"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Otsikko: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "Osoite: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Aihe: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Muokkaa aiheita"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Hyväksy"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Lisää syöte"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Päivitä"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Ruudukkonäkymä"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Luettelonäkymä"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Tallennettu"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Otsikot"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "Tarkistetaan uusia artikkeleita"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "Kenties joitain kanavia ei ole päivitetty."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Päivityksen aikana tapahtui virheitä"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ Lisää syötteitä"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Lisää verkkotilejä"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Verkkotilit eivät ole käytettävissä juuri nyt"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Pahoittelut"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Tuo tilaukset"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "Tilauksien tuonti ei ole käytettävissä juuri nyt"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "OK"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr ""
+"shorts;rss;reader;syöte;lukija;lyhyet;lyhkäiset;uutiset;uutisotsikot;otsikot;"

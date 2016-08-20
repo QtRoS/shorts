@@ -1,0 +1,15 @@
+{
+    "name": "shorts-app.mrqtros",
+    "description": "RSS Reader application",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Shorts Reboot",
+    "hooks": {
+        "shorts": {
+            "apparmor": "shorts.apparmor",
+            "desktop": "shorts.desktop"
+        }
+    },
+    "version": "3.0.4",
+    "maintainer": "Roman Shchekin <mrqtros@gmail.com>",
+    "framework": "ubuntu-sdk-15.04.3"
+}

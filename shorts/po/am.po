@@ -1,0 +1,286 @@
+# Amharic translation for ubuntu-rssreader-app
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-10-04 01:06+0000\n"
+"Last-Translator: samson <Unknown>\n"
+"Language-Team: Amharic <am@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "ጽሑፍ ይምረጡ"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "ማስቀመጫ"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "ማስወገጃ"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "ምርጫዎች"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "ድህረ ገጽ መክፈቻ"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "ለማሳየት የተቀመጠ ጽሁፍ የለም"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "ጨለማ"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "ብርሃን"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "ትንሽ"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "መካከለኛ"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "ትልቅ"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "MMMM d"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "ትናንትና በ %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "h:mm AP"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, h:mm AP"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "ከ ጥቂት ሰከንዶች በፊት..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 ደቂቃ በፊት"
+msgstr[1] "%1 ደቂቆች በፊት"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 ሰአት በፊት"
+msgstr[1] "%1 ሰአቶች በፊት"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 ቀን በፊት"
+msgstr[1] "%1 ቀኖች በፊት"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "መቀበያ መጨመሪያ"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "በ ፊደል ገበታ ፋልጎ ማግኘት አልተቻለም"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "ፍለጋው አልተሳካም"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "በ URL ፋልጎ ማግኘት አልተቻለም"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "ቁልፍ ቃል ወይንም URL ይጻፉ"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "የፍለጋው ውጤቶች"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "መሰረዣ"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "ይቀጥሉ"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "መቀበያ የለም"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "አርእስት ይምረጡ"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "ለ አርእስት መቀበያ ይጨምሩ"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + አዲስ አርእስት"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "በዚህ ስም ቀደም ያለ አርእስት አለ"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "ማስጠንቀቂያ"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "የ እርእስቱ ስም ባዶ ነጭ ቦታ መያዝ የለበትም"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "አዲስ አርእስት ይምረጡ"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "አርእስት መጨመሪያ"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "የ እርእስት ስም ይጻፉ"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "መቀበያ ይምረጡ (በምርጫ)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "መቀበያ ማረሚያ"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "ጨርሷል"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "አርእስት: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "አርእስት: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "አርእስቶች ማረሚያ"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "ማረጋገጫ"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "መቀበያ መጨመሪያ"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "ማነቃቂያ"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "መጋጠሚያ መመልከቻ"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "ዝርዝር መመልከቻ"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "ተቀምጧል"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "አጫጭር"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "አዲስ አርእስት በመፈለግ ላይ"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "ምናልባት አንዳንድ ጣቢያዎች አልተሻሻሉ ይሆናል"
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "በማሻሻል ላይ እንዳለ ስህተት ተፈጥሯል"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ መቀበያ መጨመሪያ"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "በመስመር ላይ መግለጫ መጨመሪያ"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "የ መስመር ላይ መግለጫዎች አሁን ዝግጁ አይደሉም"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "እናዝናለን"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "ከ ማኅበርተኛነት ማምጣት አልተቻለም"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "ከ ማኅበርተኛነት አሁን ማምጣት አልተቻለም"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "እሺ"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "አጭር: rssአጭር: አንባቢ:"

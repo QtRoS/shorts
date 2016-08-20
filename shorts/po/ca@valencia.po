@@ -1,0 +1,286 @@
+# Catalan translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-10-19 22:27+0000\n"
+"Last-Translator: David Planella <david.planella@ubuntu.com>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Seleccioneu l'article"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Guarda"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Suprimeix"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Preferències"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Obri en el navegador"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "No hi ha cap article per mostrar"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "Fosc"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "Clar"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Petita"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Mitjana"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Gran"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "Ahir a les %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "H:mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, H:mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "Fa uns quants segons..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "Fa %1 minut"
+msgstr[1] "Fa %1 minuts"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "Fa %1 hora"
+msgstr[1] "Fa %1 hores"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "Fa %1 dia"
+msgstr[1] "Fa %1 dies"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Afig canals"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Ha fallat la cerca d'un canal per paraula clau"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Ha fallat la cerca"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "Ha fallat una cerca d'un canal per URL"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Esriviu una paraula clau o una URL"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Resultats de la cerca"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Següent"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "No hi ha canals"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Escolliu un tema"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Afegiu els vostres canals nous a un tema"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + Tema nou"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Ja existeix un tema amb este nom"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Avís"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "El nom del tema no pot contindre únicament espais en blanc"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Crea un tema nou"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Afig un tema"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Escriviu el nom del tema"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Seleccioneu els canals (opcional)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Edita el canal"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Fet"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Títol: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Tema: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Edita els temes"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Confirma"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Afig un canal"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Actualitza"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Visualització de quadrícula"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Visualització de llista"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Guardat"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Actualitat"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "S'estan cercant articles nous"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "Pot ser que alguns canals no s'hagen actualitzat"
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Hi ha hagut errors en fer l'actualització"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ Afig els canals"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Afig comptes en línia"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Els comptes en línia encara no estan disponibles"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Ens sap greu"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Importa subscripcions"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "Encara no és possible importar subscripcions"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "D'acord"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "actualitat;rss;notícies;canals;lector;"

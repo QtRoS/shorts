@@ -1,0 +1,286 @@
+# Punjabi translation for ubuntu-rssreader-app
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-12-26 06:46+0000\n"
+"Last-Translator: Gursharnjit_Singh <ubuntuser13@gmail.com>\n"
+"Language-Team: Punjabi <pa@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "ਲੇਖ ਚੁਣੋ"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "ਸੰਭਾਲ੍ਹੋ"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "ਹਟਾਓ"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "ਚੋਣ"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "ਸਾਈਟ ਖੋਲ੍ਹੋ"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "ਇੱਥੇ ਵਿਖਾਉਣ ਲਈ ਲੇਖ ਮੌਜੂਦ ਨਹੀ"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "ਹਨ੍ਹੇਰਾ"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "ਰੌਸ਼ਨੀ"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "ਛੋਟਾ"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "ਦਰਮਿਆਨਾ"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "ਵੱਡਾ"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "ਮਮਮਮ ਡ"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "ਕੱਲ  %1 ਤੇ ਸੀ"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "ਘ:ਮਮ ਏਪੀ"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ਡਡਡ, ਘ:ਮਮ ਏਪੀ"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "ਕੁੱਝ ਸੈਕਿੰਡ  ਪਹਿਲਾਂ..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 ਮਿੰਟ ਪਹਿਲਾਂ"
+msgstr[1] "%1 ਮਿੰਟ ਪਹਿਲਾਂ"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 ਘੰਟਾ ਪਹਿਲਾਂ"
+msgstr[1] "%1 ਘੰਟੇ ਪਹਿਲਾਂ"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 ਦਿਨ ਪਹਿਲਾਂ"
+msgstr[1] "%1 ਦਿਨ ਪਹਿਲਾਂ"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "ਫ਼ੀਡ ਸ਼ਾਮਿਲ"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "ਸੰਕੇਤ-ਸ਼ਬਦ ਨਾਲ ਫੀਡ ਖੋਜ ਕਰਨਾ ਫੇਲ੍ਹ ਹੋਇਆ"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "ਖੋਜ ਫੇਲ੍ਹ ਹੋਈ"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "URL ਨਾਲ ਫੀਡ ਖੋਜ ਕਰਨਾ ਫੇਲ੍ਹ ਹੋਇਆ"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "URL ਜਾਂ ਸੰਕੇਤ-ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "ਖੋਜ ਨਤੀਜੇ"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "ਰੱਦ ਕਰੋ"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "ਅਗਲਾ"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "ਕੋਈ ਫੀਡ ਨਹੀ"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "ਵਿਸ਼ਾ ਚੁਣੋ"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "ਵਿਸ਼ੇ ਵਿੱਚ ਆਪਣੇ ਨਵੇ ਫੀਡਸ ਜੋੜੋ"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + ਨਵਾਂ ਵਿਸ਼ਾ"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "ਇਸ ਨਾਂ ਨਾਲ ਇੱਕ ਵਿਸ਼ਾ ਪਹਿਲੇ ਹੀ ਮੌਜੂਦ ਹੈ"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "ਚੇਤਾਵਨੀ"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "ਵਿਸ਼ੇ ਦਾ ਨਾਂ ਕੇਵਲ ਖਾਲੀ ਥਾਂ ਨਹੀ ਹੋ ਸਕਦੀ"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "ਨਵੇਂ ਵਿਸ਼ੇ ਦੀ ਰਚਨਾ"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "ਵਿਸ਼ਾ ਜੋੜੋ"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "ਵਿਸ਼ੇ ਦਾ ਨਾਂ ਲਿਖੋ"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "ਫੀਡ ਚੁਣੋ (ਚੋਣ)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "ਫੀਡ ਸੋਧ"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "ਮੁਕੰਮਲ"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "ਸਿਰਲੇਖ "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "ਵਿਸ਼ਾ "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "ਵਿਸ਼ੇ ਵਿੱਚ ਸੋਧ"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "ਪੁਸ਼ਟੀ"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "ਫੀਡ ਜੋੜੋ"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "ਤਾਜ਼ਾ"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "ਗਰਿੱਡ ਝਲਕ"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "ਲਿਸਟ ਝਲਕ"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "ਸੰਭਾਲ੍ਹਿਆ"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "ਛੋਟੇ"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "ਨਵੇ ਲੇਖਾਂਂ ਲਈ ਪੜਤਾਲ ਕਰ ਰਿਹਾ"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "ਸਾਇਦ ਕੁੱਝ ਚੈਨਲ ਅੱਪਡੇਟ ਨਹੀ ਹੋਏ |"
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "ਅੱਪਡੇਟ ਕਰਨਨ ਸਮੇਂ ਖਾਮੀ ਆਈ"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ ਫੀਡ ਸ਼ਾਮਿਲ"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "ਆੱਨਲਾਈਨ ਖਾਤੇ ਜੋੜੋ"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "ਹੁਣ ਲਈ ਆਨਲਾਈਨ ਖਾਤੇ ਉੱਪਲਬਧ ਨਹੀਂ ਹਨ"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "ਸਾਨੂੰ ਖੇਦ ਹੈ"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "ਗਾਹਕੀ ਆਮਦ ਕਰੋ"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "ਗਾਹਕੀਆਂ ਇੰਪੋਰਟ ਕਰਨਾ ਹੁਣ ਲਈ ਉੱਪਲਬਧ ਨਹੀਂ ਹੈ"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "ਠੀਕ"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "shorts;rss;ਰੀਡਰ;"

@@ -1,0 +1,34 @@
+Source: ubuntu-rssreader-app
+Priority: extra
+Maintainer: Ubuntu App Cats <ubuntu-touch-coreapps@lists.launchpad.net>
+Build-Depends: cmake,
+               python3,
+               debhelper (>= 9),
+               intltool,
+Standards-Version: 3.9.4
+Section: misc
+Homepage: https://launchpad.net/ubuntu-rssreader-app
+Vcs-Bzr: https://code.launchpad.net/~ubuntu-rssreader-dev/ubuntu-rssreader-app/trunk
+
+Package: rssreader-app
+Architecture: all
+Depends: libqt5webkit5-qmlwebkitplugin,
+         qmlscene,
+         qtdeclarative5-localstorage-plugin,
+         qtdeclarative5-qtquick2-plugin,
+         qtdeclarative5-u1db1.0,
+         qtdeclarative5-ubuntu-ui-toolkit-plugin | qt-components-ubuntu,
+         qtdeclarative5-xmllistmodel-plugin,
+         ${misc:Depends},
+Description: RSS Reader application
+ Core RSS Reader application
+
+Package: rssreader-app-autopilot
+Architecture: all
+Depends: libautopilot-qt (>= 1.4),
+         libqt5test5,
+         rssreader-app (= ${source:Version}),
+         ubuntu-ui-toolkit-autopilot,
+         ${misc:Depends},
+Description: Autopilot tests for RSS reader Application
+ This package contains the autopilot tests for the RSS reader

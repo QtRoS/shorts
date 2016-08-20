@@ -1,0 +1,286 @@
+# Italian translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-09-30 10:54+0000\n"
+"Last-Translator: Claudio Arseni <claudio.arseni@gmail.com>\n"
+"Language-Team: Italian <it@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Seleziona articolo"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Salva"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Opzioni"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Apri sito"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "Non ci sono articoli da mostrare"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "Scuro"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "Chiaro"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Piccolo"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Medio"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Grande"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "Ieri alle %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "hh:mm AP"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, hh:mm AP"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "Alcuni secondi fa...."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 minuto fa"
+msgstr[1] "%1 minuti fa"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 ora fa"
+msgstr[1] "%1 ore fa"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 giorno fa"
+msgstr[1] "%1 giorni fa"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Aggiungi feed"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Ricerca di feed per parole chiave non riuscita"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Ricerca non riuscita"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "Ricerca di feed per URL non riuscita"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Digita una parola chiave o un URL"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Risultati di ricerca"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Annulla"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Successivo"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "Nessun feed"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Scegliere categoria"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Aggiungere i nuovi feed a una categoria"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + Nuova categoria"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Esiste già una categoria con questo nome"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Avviso"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "Il nome della categoria non può contenere solo spazi"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Crea nuova categoria"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Aggiungi categoria"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Digita il nome della categoria"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Seleziona feed (opzionale)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Modifica feed"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Fatto"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Titolo: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Categoria: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Modifica categoria"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Conferma"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Aggiungi feed"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Vista a griglia"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Vista a elenco"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Salvate"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Shorts"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "Ricerca nuovi articoli"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "Forse alcuni canali non sono stati aggiornati."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Si sono verificati degli errori durante l'aggiornamento"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ Aggingi feed"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Aggiungi account online"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Gli account online non sono al momento disponibili"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Spiacenti"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Importa sottoscrizioni"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "L'importazione delle sottoscrizioni non è al momento disponibile"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "OK"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "rss;short;reader;feed;"

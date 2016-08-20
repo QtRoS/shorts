@@ -1,0 +1,287 @@
+# Swedish translation for ubuntu-rssreader-app
+# Copyright © 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# Josef Andersson <josef.andersson@fripost.org>, 2014.
+# clone <josef.andersson@fripost.org>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2015-04-03 05:36+0000\n"
+"Last-Translator: Arve Eriksson <Unknown>\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+"Language: sv\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Välj artikel"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Spara"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Ta bort"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Alternativ"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Öppna sida"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "Det finns inga artiklar att visa"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "Mörk"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "Ljus"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Liten"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Mellan"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Stor"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "Igår vid %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "h:mm AP"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, h:mm AP"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "För några sekunder sedan…"
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "För %1 minut sedan"
+msgstr[1] "För %1 minuter sedan"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "För %1 timme sedan"
+msgstr[1] "För %1 timmar sedan"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "För %1 dag sedan"
+msgstr[1] "För %1 dagar sedan"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Lägg till flöden"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Kunde inte söka i flöden med nyckelord"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Sökningen misslyckades"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "Kunde inte söka efter flöden med URL"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Skriv in ett nyckelord eller URL"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Sökresultat"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Nästa"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "Inga flöden"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Välj ämne"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Lägg till dina nya flöden till ett ämne"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + Nytt ämne"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Ett ämne med det här namnet finns redan"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Varning"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "Namnet på ämnet kan inte innehålla enbart blanktecken"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Skapa ett nytt ämne"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Lägg till ett ämne"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Skriv in ämnets namn"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Välj flöden (valfri)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Redigera flöde"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Klar"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Titel: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Ämne: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Redigera ämnen"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Bekräfta"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Lägg till flöde"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Rutnätsvy"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Listvy"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Sparad"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Shorts"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "Sök efter nya artiklar"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "Några kanaler har kanske inte blivit uppdaterade."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Fel inträffade under uppdateringsprocessen"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ Lägg till flöden"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Lägg till nätbaserade konton"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Nätkonton är inte tillgängliga just nu"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Vi beklagar"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Importera prenumerationer"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "Importering av prenumerationer är inte tillgänglig just nu"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "OK"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "shorts;rss;läsare;"

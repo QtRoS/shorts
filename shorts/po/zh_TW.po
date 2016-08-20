@@ -1,0 +1,283 @@
+# Chinese (Traditional) translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-11-19 14:13+0000\n"
+"Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "選取文章"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "儲存"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "移除"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "選項"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "開啟網站"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "無文章可供顯示"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "暗"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "亮"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "小"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "中"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "大"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "M月d日"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "昨天 %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "AP h:mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd  AP h:mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "幾秒之前..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 分鐘前"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 小時前"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 天前"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "加入餽流"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "無法以關鍵字搜尋餽流"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "搜尋失敗"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "無法以網址搜尋餽流"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "輸入關鍵字或網址"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "搜尋結果"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "取消"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "下一篇"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "沒有餽流"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "選擇主題"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "將新的餽流加入主題中"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + 新主題"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "已有同名主題"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "警告"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "主題名稱不能僅有空格"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "建立新主題"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "加入主題"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "輸入主題名稱"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "選取餽流 (選擇性)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "編輯餽流"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "完成"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "標題： "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "網址： "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "主題： "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "編輯主題"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "確認"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "加入餽流"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "重新整理"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "格狀檢視"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "列表檢視"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "已儲存"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "短文"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "正在檢查有否新文章"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "可能有些頻道尚未更新。"
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "更新時遭遇錯誤"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ 加入餽流"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "加入線上帳號"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "暫時無法提供線上帳號"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "抱歉"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "匯入訂閱"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "暫時無法匯入訂閱"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "確定"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "shorts;rss;reader;"

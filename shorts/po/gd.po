@@ -1,0 +1,293 @@
+# Gaelic; Scottish translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-10-03 15:30+0000\n"
+"Last-Translator: GunChleoc <Unknown>\n"
+"Language-Team: Gaelic; Scottish <gd@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "Tagh artagail"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "Sàbhail"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "Thoir air falbh"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "Roghainnean"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "Fosgail làrach"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "Chan eil artaigealan ann as urrainn dhuinn sealltainn"
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr "Dorcha"
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr "Soilleir"
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "Beag"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "Meadhanach"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "Mòr"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "d MMMM"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "An-dè aig %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "h:mm AP"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, h:mm AP"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "Diog no dhà air ais..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 mhionaid air ais"
+msgstr[1] "%1 mhionaid air ais"
+msgstr[2] "%1 mionaidean air ais"
+msgstr[3] "%1 mionaid air ais"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 uair a thìde air ais"
+msgstr[1] "%1 uair a thìde air ais"
+msgstr[2] "%1 uairean a thìde air ais"
+msgstr[3] "%1 uair a thìde air ais"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 latha air ais"
+msgstr[1] "%1 latha air ais"
+msgstr[2] "%1 làithean air ais"
+msgstr[3] "%1 latha air ais"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "Cuir inbhirean ris"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "Cha b' urrainn dhuinn inbhirean a lorg a-rèir facail-luirg"
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "Dh'fhàillig an lorg"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "Cha b' urrainn dhuinn inbhirean a lorg a-rèir URL"
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "Cuir a-steach facal-luirg no URL"
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "Toraidhean luirg"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "Sguir dheth"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "Air adhart"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "Chan eil inbhir ann"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "Tagh cuspair"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "Cuir na h-inbhirean ùra agad ri cuspair"
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " ⁊ Cuspair ùr"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "Tha cuspair ann mu thràth air a bheil an t-ainm seo"
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "Rabhadh"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "Chan fhaod dìreach àitichean bàna a bhith ann an ainm cuspair"
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "Cruthaich cuspair ùr"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "Cuir cuspair ris"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "Cuir a-steach ainm a' chuspair"
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "Tagh inbhirean (roghainneil)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "Deasaich an t-inbhir"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "Deiseil"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "Tiotal: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "Cuspair: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "Deasaich na cuspairean"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "Dearbhaich"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "Cuir inbhir ris"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "Ath-nuadhaich"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "Sealladh griod"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "Sealladh liosta"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "Air a shàbhaladh"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "Shorts"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "A' lorg artaigealan ùra"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "'S mathaid nach deach cuid dhe na seanailean ùrachadh."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "Thachair mearachdan rè an ùrachaidh"
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "⁊ Cuir inbhirean ris"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "Cuir cunntasan air loidhne ris"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "Chan eil cunntasan air loidhne ri fhaighinn an-dràsta"
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "Tha sinn duilich"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "Ion-phortaich fo-sgrìobhaidhean"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "Chan eil ion-phortadh nam fo-sgrìobhaidhean ri fhaighinn an-dràsta"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "Ceart ma-thà"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr "shorts;rss;reader;leughadair;inbhir-naidheachd;inbhirean-naidheachd"

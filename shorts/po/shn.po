@@ -1,0 +1,286 @@
+# Shan translation for ubuntu-rssreader-app
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2013-10-01 09:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Shan <shn@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n == 1) ? 0 : 1;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr ""
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr ""
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr ""
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr ""
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr ""
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr ""
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr ""
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr ""
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr ""
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr ""
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr ""
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr ""
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr ""
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr ""
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr ""
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr ""
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr ""
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr ""
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr ""
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr ""
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr ""
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr ""
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr ""
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr ""
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr ""
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr ""
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr ""
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr ""
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr ""
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr ""
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr ""
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr ""
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr ""
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr ""
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr ""
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr ""
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr ""
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr ""
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr ""
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr ""
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr ""
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr ""
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr ""
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr ""
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr ""
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr ""
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr ""
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr ""
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr ""
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr ""
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr ""
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr ""

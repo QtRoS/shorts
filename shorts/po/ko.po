@@ -1,0 +1,283 @@
+# Korean translation for ubuntu-rssreader-app
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the ubuntu-rssreader-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ubuntu-rssreader-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-22 10:47+0800\n"
+"PO-Revision-Date: 2014-08-18 22:45+0000\n"
+"Last-Translator: MinSik CHO <Unknown>\n"
+"Language-Team: Korean <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2015-05-27 05:32+0000\n"
+"X-Generator: Launchpad (build 17514)\n"
+
+#: ../ArticleViewItem.qml:121
+msgid "Select article"
+msgstr "기사를 선택하세요"
+
+#: ../ArticleViewPage.qml:42
+msgid "Save"
+msgstr "저장"
+
+#: ../ArticleViewPage.qml:42 ../feeds/SwipeDelete.qml:57
+#: ../feeds/SwipeDelete.qml:76
+msgid "Remove"
+msgstr "제거"
+
+#: ../ArticleViewPage.qml:58
+msgid "Options"
+msgstr "설정"
+
+#: ../ArticleViewPage.qml:66
+msgid "Open site"
+msgstr "사이트 열기"
+
+#: ../BaseTab.qml:152
+msgid "There are no articles to show"
+msgstr "표시할 글이 없습니다."
+
+#: ../ReadingOptions.qml:42
+msgid "Dark"
+msgstr ""
+
+#: ../ReadingOptions.qml:52
+msgid "Light"
+msgstr ""
+
+#: ../ReadingOptions.qml:109
+msgid "Small"
+msgstr "작음"
+
+#: ../ReadingOptions.qml:111
+msgid "Mid"
+msgstr "중간"
+
+#: ../ReadingOptions.qml:112
+msgid "Large"
+msgstr "큼"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:39
+msgid "MMMM d"
+msgstr "MMMM d"
+
+#: ../dateutils.js:54
+#, qt-format
+msgid "Yesterday at %1"
+msgstr "어제 %1"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:57
+msgid "h:mm AP"
+msgstr "AP h:mm"
+
+#. TRANSLATORS: this is a time formatting string,
+#. see http://qt-project.org/doc/qt-5.0/qtqml/qml-qtquick2-date.html#details for valid expressions
+#: ../dateutils.js:69
+msgid "ddd, h:mm AP"
+msgstr "ddd, AP h:mm"
+
+#: ../dateutils.js:76
+msgid "A few seconds ago..."
+msgstr "몇 초 전..."
+
+#: ../dateutils.js:79
+#, qt-format
+msgid "%1 minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 분 전"
+
+#: ../dateutils.js:83
+#, qt-format
+msgid "%1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 시간 전"
+
+#: ../dateutils.js:89
+#, qt-format
+msgid "%1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 일 전"
+
+#: ../feeds/AppendFeedPage.qml:30 ../shorts-app.qml:238 ../shorts-app.qml:398
+msgid "Add feeds"
+msgstr "피드 추가하기"
+
+#: ../feeds/AppendFeedPage.qml:68
+msgid "Failed to perform a feed search by keyword"
+msgstr "키워드로 피드를 검색하는데 실패하였습니다."
+
+#: ../feeds/AppendFeedPage.qml:69 ../feeds/AppendFeedPage.qml:100
+msgid "Search failed"
+msgstr "검색이 실패했습니다"
+
+#: ../feeds/AppendFeedPage.qml:99
+msgid "Failed to perform a feed search by URL"
+msgstr "URL로 피드를 검색하는데 실패하였습니다."
+
+#: ../feeds/AppendFeedPage.qml:136
+msgid "Type a keyword or URL"
+msgstr "키워드나 URL을 입력하세요."
+
+#: ../feeds/AppendFeedPage.qml:188
+msgid "Search results"
+msgstr "검색 결과"
+
+#: ../feeds/AppendFeedPage.qml:246 ../feeds/CreateTopicPage.qml:38
+#: ../feeds/TopicManagement.qml:64 ../shorts-app.qml:477
+msgid "Cancel"
+msgstr "취소"
+
+#: ../feeds/AppendFeedPage.qml:279
+msgid "Next"
+msgstr "다음"
+
+#: ../feeds/AppendFeedPage.qml:308 ../feeds/CreateTopicPage.qml:183
+msgid "No feeds"
+msgstr "피드 없음"
+
+#: ../feeds/ChooseTopicPage.qml:13
+msgid "Choose topic"
+msgstr "주제 선택"
+
+#: ../feeds/ChooseTopicPage.qml:79
+msgid "Add your new feeds to a topic"
+msgstr "주제에 새로운 피드를 추가하세요."
+
+#: ../feeds/ChooseTopicPage.qml:90
+msgid " + New topic"
+msgstr " + 새 주제"
+
+#: ../feeds/ChooseTopicPage.qml:134 ../feeds/CreateTopicPage.qml:78
+msgid "A topic with this name already exists"
+msgstr "이 이름을 가진 주제가 이미 존재합니다."
+
+#: ../feeds/ChooseTopicPage.qml:135 ../feeds/ChooseTopicPage.qml:148
+#: ../feeds/CreateTopicPage.qml:67 ../feeds/CreateTopicPage.qml:79
+msgid "Warning"
+msgstr "경고"
+
+#: ../feeds/ChooseTopicPage.qml:147 ../feeds/CreateTopicPage.qml:66
+msgid "Topic name can't contain only whitespaces"
+msgstr "주제는 띄어쓰기로만 구성될 수 없습니다."
+
+#: ../feeds/CreateTopicPage.qml:12
+msgid "Create new topic"
+msgstr "새 주제 추가"
+
+#: ../feeds/CreateTopicPage.qml:56 ../feeds/TopicManagement.qml:164
+msgid "Add topic"
+msgstr "주제 추가"
+
+#: ../feeds/CreateTopicPage.qml:128
+msgid "Type topic name"
+msgstr "주제 이름을 적으세요."
+
+#: ../feeds/CreateTopicPage.qml:144
+msgid "Select feeds (optional)"
+msgstr "피드를 선택하세요 (선택)"
+
+#: ../feeds/EditFeedPage.qml:12
+msgid "Edit Feed"
+msgstr "피드 수정"
+
+#: ../feeds/EditFeedPage.qml:20
+msgid "Done"
+msgstr "완료"
+
+#: ../feeds/EditFeedPage.qml:93
+msgid "Title: "
+msgstr "제목: "
+
+#: ../feeds/EditFeedPage.qml:116
+msgid "URL: "
+msgstr "URL: "
+
+#: ../feeds/EditFeedPage.qml:134
+msgid "Topic: "
+msgstr "주제: "
+
+#: ../feeds/TopicManagement.qml:13 ../shorts-app.qml:252
+msgid "Edit topics"
+msgstr "주제 편집"
+
+#: ../feeds/TopicManagement.qml:84
+msgid "Confirm"
+msgstr "확인"
+
+#: ../feeds/TopicManagement.qml:101
+msgid "Add Feed"
+msgstr "피드 추가"
+
+#: ../shorts-app.qml:205
+msgid "Refresh"
+msgstr "새로 고침"
+
+#: ../shorts-app.qml:212
+msgid "Grid View"
+msgstr "그리드 보기"
+
+#: ../shorts-app.qml:212
+msgid "List view"
+msgstr "목록 보기"
+
+#: ../shorts-app.qml:329
+msgid "Saved"
+msgstr "저장됨"
+
+#: ../shorts-app.qml:337 com.ubuntu.shorts_shorts.desktop.in.in.h:1
+msgid "Shorts"
+msgstr "쇼트"
+
+#: ../shorts-app.qml:469
+msgid "Checking for new articles"
+msgstr "새 글 확인 중"
+
+#: ../shorts-app.qml:493
+msgid "Perhaps some of the channels have not been updated."
+msgstr "몇몇 채널이 업데이트 되지 않은 것 같습니다."
+
+#: ../shorts-app.qml:494
+msgid "Errors occurred during the update"
+msgstr "업데이트 중 오류가 발생했습니다."
+
+#: ../shorts-app.qml:512
+msgid "+ Add feeds"
+msgstr "+ 피드 추가"
+
+#: ../shorts-app.qml:532
+msgid "Add online accounts"
+msgstr "온라인 계정 추가"
+
+#: ../shorts-app.qml:535
+msgid "Online accounts are not available for now"
+msgstr "온라인 계정을 사용할 수 없습니다."
+
+#: ../shorts-app.qml:536 ../shorts-app.qml:545
+msgid "We are sorry"
+msgstr "죄송합니다"
+
+#: ../shorts-app.qml:541
+msgid "Import subscriptions"
+msgstr "구독 목록 불러오기"
+
+#: ../shorts-app.qml:544
+msgid "Importing subscriptions is not available for now"
+msgstr "구독 목록을 가져올 수 없습니다"
+
+#: ../shorts-app.qml:559
+msgid "Ok"
+msgstr "확인"
+
+#: com.ubuntu.shorts_shorts.desktop.in.in.h:2
+msgid "shorts;rss;reader;"
+msgstr ""
