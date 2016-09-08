@@ -18,7 +18,7 @@ MainView {
     applicationName: "shorts-app.mrqtros"
     anchorToKeyboard: true
 
-    width: units.gu(100)
+    width: units.gu(46)
     height: units.gu(84)
     focus: true
 

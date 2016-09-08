@@ -5,21 +5,34 @@ AbstractButton {
     id: abstractButton
 
     property alias icon: _icon
+    property alias text: _text
 
-    width: units.gu(4)
-    height: width
+    height: units.gu(3)
+    width: contentRow.width
 
     Rectangle {
         visible: abstractButton.pressed
         anchors.fill: parent
-        color: "#4ec6ee"
+        color: "lightgrey"
     }
 
-    Icon {
-        id: _icon
-        width: units.gu(2)
-        height: width
-        anchors.centerIn: parent
-        color: "#5d5d5d"
+    Row {
+        id: contentRow
+
+        spacing: units.gu(0.5)
+        anchors.verticalCenter: parent.verticalCenter
+
+        Text {
+            id: _text
+            anchors.verticalCenter: parent.verticalCenter
+        }
+
+        Icon {
+            id: _icon
+            width: units.gu(3)
+            height: width
+            anchors.verticalCenter: parent.verticalCenter
+            color: "#EB6536"
+        }
     }
 }

@@ -1,7 +1,8 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
+// import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Components.Popups 1.3
+import QtGraphicalEffects 1.0
 
 import "../components"
 import "../utils/databasemodule_v2.js" as DB
@@ -19,35 +20,309 @@ Page {
     }
 
     Item {
-        id: pageHeader
+        id: itemHeader
 
-        height: units.gu(6)
         anchors {
-            right: parent.right
             left: parent.left
+            right: parent.right
+        }
+        height: units.gu(12)
+        z: 1
+
+        Image {
+            source: Qt.resolvedUrl("/img/qml/icons/back1.jpg")
+            anchors.fill: parent
+            fillMode: Image.PreserveAspectCrop
         }
 
-        Row {
-            spacing: units.gu(0.5)
+        Rectangle {
+            color: "#88000000"
             anchors {
                 right: parent.right
-                rightMargin: units.gu(1)
-                verticalCenter: parent.verticalCenter
+                top: parent.top
+                bottom: parent.bottom
+            }
+            width: units.gu(25)
+
+            Label {
+                id: textTitle
+                text: "Shorts"
+                color: "#EB6536"
+                style: Text.Raised
+                styleColor: "black"
+                textFormat: Text.PlainText
+                font.pixelSize: units.gu(6)
+                anchors {
+                    left: parent.left
+                    leftMargin: units.gu(1)
+                    top: parent.top
+                }
+            }
+
+            Label {
+                id: textSubtitle
+                text: "Ubuntu RSS Reader"
+                color: "#EB6536"
+                style: Text.Raised
+                styleColor: "black"
+                textFormat: Text.PlainText
+                textSize: Label.Medium
+                anchors {
+                    left: textTitle.left
+                    top: textTitle.bottom
+                    topMargin: -units.gu(0.5)
+                }
             }
 
             ActionIcon {
                 id: actionSetting
                 objectName:"actionSetting"
-                icon.name: "settings"
+                icon {
+                    width: units.gu(3)
+                    color: "#EB6536"
+                    name: "settings"
+                }
+                text {
+                    text: "Settings"
+                    color: "white"
+                    font.italic: true
+                    style: Text.Raised
+                }
+                anchors {
+                    right: parent.right
+                    rightMargin: units.gu(1)
+                    bottom: parent.bottom
+                    bottomMargin: units.gu(0.5)
+                }
                 onClicked: pageStack.push(settingsPage, mainPage)
             }
+        }
 
-            ActionIcon {
-                id: editTopicsAction
-                objectName:"editTopicsAction"
-                icon.name: "edit"
-                onClicked: pageStack.push(topicManagement, mainPage)
+
+
+        Rectangle {
+            color: "#404244"
+            anchors {
+                right: parent.right
+                left: parent.left
+                bottom: parent.bottom
             }
+            height: units.gu(0.25)
+        }
+    }
+
+    GridView {
+        id: topicListView
+
+        model: topicModel
+        anchors {
+            left: parent.left
+            top: itemHeader.bottom
+            right: parent.right
+            bottom: parent.bottom
+            bottomMargin: units.gu(4) // Because of bottom edge tip.
+        }
+
+        header: Column {
+            anchors {
+                right: parent.right
+                left: parent.left
+            }
+
+            Item {
+                width: parent.width
+                height: units.gu(11)
+
+                ListItem {
+                    anchors {
+                        left: parent.left
+                        right: parent.horizontalCenter
+                        top: parent.top
+                        bottom: parent.bottom
+                    }
+                    Icon {
+                        color: "#EB6536"
+                        width: units.gu(6)
+                        height: width
+                        name: "rssreader-app-symbolic"
+                        anchors {
+                            centerIn: parent
+                            verticalCenterOffset: -units.gu(1.5)
+                        }
+
+                        Text {
+                            text: "All articles"
+                            color: "#404244"
+                            font.bold: true
+                            anchors {
+                                horizontalCenter: parent.horizontalCenter
+                                top: parent.bottom
+                                topMargin: units.gu(0.5)
+                            }
+                        }
+                    }
+                    onClicked: showTopicById(0)
+                }
+
+                ListItem {
+                    anchors {
+                        left: parent.horizontalCenter
+                        right: parent.right
+                        top: parent.top
+                        bottom: parent.bottom
+                    }
+                    Icon {
+                        color: "#EB6536" // color: "lightgrey"
+                        width: units.gu(6)
+                        height: width
+                        name: "scope-manager"
+                        anchors {
+                            centerIn: parent
+                            verticalCenterOffset: -units.gu(1.5)
+                        }
+
+                        Text {
+                            text: "Saved"
+                            color: "#404244"
+                            font.bold: true
+                            anchors {
+                                horizontalCenter: parent.horizontalCenter
+                                top: parent.bottom
+                                topMargin: units.gu(0.5)
+                            }
+                        }
+                    }
+                    onClicked: showTopicById(-1)
+                }
+
+
+                Rectangle {
+                    color: "lightgrey"
+                    width: 1
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                        top: parent.top
+                        topMargin: units.gu(1)
+                        bottom: parent.bottom
+                        bottomMargin: units.gu(1)
+                    }
+                }
+
+                Rectangle {
+                    color: "lightgrey"
+                    width: parent.width
+                    height: 1
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                        bottom: parent.bottom
+                    }
+                }
+            }
+
+            Rectangle {
+                color: "#404244"
+                anchors {
+                    right: parent.right
+                    left: parent.left
+                }
+                height: units.gu(2)
+            }
+
+            Rectangle {
+                id: topicRect
+                color: "transparent"
+                width: parent.width
+                height: units.gu(3)
+
+                Label {
+                    text: "Topics"
+                    color: "black"
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        leftMargin: units.gu(1)
+                    }
+                    //font.italic: true
+                    textSize: Label.Medium
+                }
+
+                Rectangle {
+                    color: "lightgrey"
+                    width: parent.width
+                    height: 1
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                        bottom: parent.bottom
+                    }
+                }
+
+                ActionIcon {
+                    id: editTopicsAction
+                    objectName:"editTopicsAction"
+                    icon {
+                        width: units.gu(2.5)
+                        color: "#EB6536" // color: "grey"
+                        name: "edit"
+                    }
+                    text {
+                        text: "Edit"
+                        color: "#404244"
+                        font.italic: true
+                    }
+                    anchors {
+                        right: parent.right
+                        rightMargin: units.gu(1)
+                        verticalCenter: parent.verticalCenter
+                    }
+                    onClicked: pageStack.push(topicManagement, mainPage)
+                }
+            }
+        }
+
+        boundsBehavior: Flickable.StopAtBounds
+        cellWidth: width / 2
+        cellHeight: units.gu(10)
+
+        delegate: ListItem {
+            height: topicListView.cellHeight
+            width: topicListView.cellWidth
+
+            divider.visible: false
+
+            Text {
+                color: "#404244"
+                anchors.centerIn: parent
+                text: model.title
+            }
+
+            Rectangle {
+                color: "lightgrey"
+
+                height: 1
+                anchors {
+                    bottom: parent.bottom
+                    left: parent.left
+                    leftMargin: (model.index % 2) ? 0 : units.gu(2)
+                    right: parent.right
+                    rightMargin: (model.index % 2) ? units.gu(2) : 0
+                }
+            }
+
+            Rectangle {
+                color: "lightgrey"
+
+                width: 1
+                anchors {
+                    right: parent.right
+                    top: parent.top
+                    topMargin: units.gu(1)
+                    bottom: parent.bottom
+                    bottomMargin: units.gu(1)
+                }
+                visible: !(model.index % 2)
+            }
+
+            onClicked: showTopicById(model.topicId, model.title)
         }
     }
 
@@ -75,140 +350,6 @@ Page {
 
         pageToAdd.reloadTab("selectedInMainPage")
         pageStack.push(pageToAdd, mainPage)
-    }
-
-    ListView {
-        id: topicList
-        objectName: "topiclist"
-
-        clip: true
-        anchors {
-            bottom: parent.bottom
-            left: parent.left
-            right: parent.right
-            top: pageHeader.bottom
-        }
-
-        model: topicModel
-
-        header: Item {
-            id: mainButtonsRow
-
-            height: units.gu(10)
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-
-            Rectangle {
-                id: shortsBtn
-
-                border.color: "#21b8e9"
-                color: shortsBtnMa.pressed ? "#4ec6ee" : "#00000000"
-
-                anchors {
-                    left: parent.left
-                    leftMargin: units.gu(2)
-                    right: parent.horizontalCenter
-                    rightMargin: units.gu(1)
-                    top: parent.top
-                    topMargin: units.gu(1)
-                    bottom: parent.bottom
-                    bottomMargin: units.gu(1)
-                }
-
-                Text {
-                    anchors.centerIn: parent
-                    text: i18n.tr("Shorts")
-                }
-
-                MouseArea {
-                    id: shortsBtnMa
-                    anchors.fill: parent
-                    onClicked: showTopicById(0)
-                }
-            }
-
-
-            // ------------------------------------------
-
-            // ==================================================
-
-            Rectangle {
-                id: savedBtn
-
-                border.color: "#21b8e9"
-                color: savedBtnMa.pressed ? "#4ec6ee" : "#00000000"
-
-                anchors {
-                    left: parent.horizontalCenter
-                    leftMargin: units.gu(1)
-                    right: parent.right
-                    rightMargin: units.gu(2)
-                    top: parent.top
-                    topMargin: units.gu(1)
-                    bottom: parent.bottom
-                    bottomMargin: units.gu(1)
-                }
-
-                Text {
-                    anchors.centerIn: parent
-                    text: i18n.tr("Saved")
-                }
-
-                MouseArea {
-                    id: savedBtnMa
-                    anchors.fill: parent
-                    onClicked: showTopicById(-1)
-                }
-            }
-
-            // ==================================================
-        }
-
-        delegate: Item {
-
-            height: units.gu(8)
-            anchors {
-                right: parent.right
-                left: parent.left
-            }
-
-            Rectangle {
-
-                border.color: "#21b8e9"
-                color: delMa.pressed ? "#4ec6ee" : "#00000000"
-
-                anchors {
-                    left: parent.left
-                    leftMargin: units.gu(2)
-                    right: parent.right
-                    rightMargin: units.gu(2)
-                    top: parent.top
-                    topMargin: units.gu(1)
-                    bottom: parent.bottom
-                    bottomMargin: units.gu(1)
-                }
-
-                Label {
-                    anchors.centerIn: parent
-                    width: parent.width - units.gu(2)
-                    horizontalAlignment: Text.AlignHCenter
-                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                    maximumLineCount: 1
-                    elide: Text.ElideRight
-                    textFormat: Text.PlainText
-                    text: model.title
-                }
-
-                MouseArea {
-                    id: delMa
-                    anchors.fill: parent
-                    onClicked: showTopicById(model.topicId, model.title)
-                }
-            }
-
-        }
     }
 
     ListModel {

@@ -67,6 +67,7 @@ Rectangle
                 fontSize: "x-small"
                 width: parent.width - units.gu(2)
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                maximumLineCount: 1
                 opacity: 0.8
             }
         }

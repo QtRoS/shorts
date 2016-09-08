@@ -52,5 +52,6 @@
         <file>qml/icons/share.svg</file>
         <file>qml/icons/view-fullscreen.svg</file>
         <file>qml/icons/view-restore.svg</file>
+        <file>qml/icons/back1.jpg</file>
     </qresource>
 </RCC>
