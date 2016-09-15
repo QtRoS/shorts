@@ -36,6 +36,8 @@
         <file>qml/nongoogle/AppendNGFeedPage.qml</file>
         <file>qml/pages/SettingsPage.qml</file>
         <file>qml/nongoogle/Positioner.qml</file>
+        <file>qml/pages/YadLoginPage.qml</file>
+        <file>qml/content/YadApi.qml</file>
     </qresource>
     <qresource prefix="/img">
         <file>qml/icons/add.svg</file>

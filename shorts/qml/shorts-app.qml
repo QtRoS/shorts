@@ -313,6 +313,20 @@ MainView {
             id: sharePage
             visible: false
         }
+
+        // ******************************** Share Page ***********************///////////////
+        YadLoginPage {
+            id: yadLoginPage
+            visible: false
+
+            onAuthPassed: {
+                console.log("TOKEN", token)
+
+                optionsKeeper.yadToken = token
+                // networkManager.token = token TODO
+                pageStack.pop(settingsPage)
+            }
+        }
     } // PageStack
 
     /* -------------------------- Utils ---------------------------- */

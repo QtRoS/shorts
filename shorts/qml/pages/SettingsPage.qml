@@ -67,7 +67,45 @@ Page {
         }
 
         ListItem.ThinDivider{ }
-        /////////////////////////////////////////////////////////////////////   Google RSS engine switch    end here
+
+        /////////////////////////////////////////////////////////////////////   YaD login starts
+        Label {
+            anchors { left: parent.left; right: parent.right; margins: units.gu(2) }
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+            text: i18n.tr("You can use Yandex.Disk cloud storage service to sync your feeds across devices.")
+        }
+
+        Item { width: 10; height: 1 } // just a separator
+
+        Item {
+            anchors { left: parent.left; right: parent.right; }
+            height: btnYadLogin.height
+
+            property bool loggedIn: !!optionsKeeper.yadToken
+
+            Button {
+                id: btnYadLogin
+
+                text: parent.loggedIn ? "Log out Yandex.Disk" : "Login Yandex.Disk"
+                color: "#EB6536"
+                anchors.centerIn: parent
+                onClicked: {
+                    if (parent.loggedIn) {
+                        optionsKeeper.yadToken = ""
+                        yadLoginPage.logout()
+                        pageStack.push(yadLoginPage, pageSettings, false, { } )
+                    }
+                    else {
+                        pageStack.push(yadLoginPage, pageSettings, false, { } )
+                        yadLoginPage.login()
+                    }
+                }
+            }
+        }
+
+        ListItem.ThinDivider{ }
+
     }// Column
 
 }

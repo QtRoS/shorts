@@ -40,6 +40,7 @@ OTHER_FILES += ..\shorts.apparmor \
     qml/pages/EditFeedPage.qml \
     qml/pages/FeedComponent.qml \
     qml/pages/SwipeDelete.qml \
+    qml/pages/YadLoginPage.qml \
     qml/pages/TopicComponent.qml \
     qml/tabs/BaseTab.qml \
     qml/tabs/SavedTab.qml \
@@ -47,6 +48,7 @@ OTHER_FILES += ..\shorts.apparmor \
     qml/tabs/TopicTab.qml \
     qml/shorts-app.qml \
     qml/content/SharePage.qml \
+    qml/content/YadApi.qml \
     qml/nongoogle/AppendNGFeedPage.qml \
     qml/nongoogle/Positioner.qml \
     qml/nongoogle/XmlNetwork.qml \

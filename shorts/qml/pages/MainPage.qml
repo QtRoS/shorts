@@ -329,8 +329,9 @@ Page {
             Label {
                 color: "grey"
                 anchors {
-                    left: parent.left
-                    leftMargin: units.gu(1)
+                    //left: parent.left
+                    //leftMargin: units.gu(1)
+                    horizontalCenter: parent.horizontalCenter
                     bottom: parent.bottom
                     bottomMargin: units.gu(0.5)
                 }
@@ -411,7 +412,7 @@ Page {
         var tags = DB.loadTagsEx()
         topicModel.clear()
         for (var i = 0; i< tags.rows.length; i++) {
-            console.log(tags.rows.item(i).feed_count, tags.rows.item(i).article_count)
+            //console.log(tags.rows.item(i).feed_count, tags.rows.item(i).article_count)
             topicModel.append({ "title" : tags.rows.item(i).name,
                                   "feed_count" : tags.rows.item(i).feed_count,
                                   "article_count" : tags.rows.item(i).article_count,

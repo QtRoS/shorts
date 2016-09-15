@@ -11,18 +11,21 @@ Item {
     property bool useDarkTheme
     property bool useListMode
     property bool useGoogleSearch
+    property string yadToken: ""
 
     Component.onCompleted: {
         fontSize = getFontSize()
         useDarkTheme = getUseDarkTheme()
         useListMode = getUseListMode()
         useGoogleSearch = getUseGoogleSearch()
+        yadToken = getYadToken()
     }
 
     onFontSizeChanged: setFontSize(fontSize)
     onUseDarkThemeChanged: setUseDarkTheme(useDarkTheme)
     onUseListModeChanged: setUseListMode(useListMode)
     onUseGoogleSearchChanged: setUseGoogleSearch(useGoogleSearch)
+    onYadTokenChanged: setYadToken(yadToken)
 
     function getFontSize() {
         return settings.fontSize
@@ -64,6 +67,14 @@ Item {
         settings.useGoogleSearch = value
     }
 
+    function getYadToken() {
+        return settings.yadToken
+    }
+
+    function setYadToken(value) {
+        settings.yadToken = value
+    }
+
     Settings {
         id: settings
         property string dbVersion: "1.2"
@@ -71,5 +82,6 @@ Item {
         property bool useListMode: false
         property bool useGoogleSearch: true
         property int fontSize: 1
+        property string yadToken: ""
     }
 } // Item
