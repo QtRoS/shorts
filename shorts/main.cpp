@@ -4,6 +4,7 @@
 
 #include "CachingNetworkManagerFactory.h"
 #include "xml2json/utilities.h"
+#include "networkmanager.h"
 
 #include <QDebug>
 
