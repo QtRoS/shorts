@@ -95,13 +95,18 @@ MainView {
     }
 
     /* -------------------------- Visuals ---------------------------- */
-
     AdaptivePageLayout {
         id: pageStack
 
         objectName: "pageStack"
         primaryPage: mainPage
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+            rightMargin: -1 // SDK BUG?
+        }
         focus: true
 
         property var commonHeadActions: [refreshAction, changeModeAction, nightModeAction]
@@ -213,20 +218,7 @@ MainView {
         MainPage {
             id: mainPage
 
-            property var bottomEdge: bottomEdgeItself
-
-            BottomEdge {
-                id: bottomEdgeItself
-                height: parent.height
-                hint.text: i18n.tr("Add feeds")
-                contentComponent: AppendFeedPage {
-                    title: i18n.tr("Add feeds")
-                    visible: true
-                    width: mainPage.width
-                    height: mainPage.height
-                    anotherPageStack: mainPage.pageStack
-                }
-            }
+            objectName: "mainPage"
         }
 
         SavedTab {

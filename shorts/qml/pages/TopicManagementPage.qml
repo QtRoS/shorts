@@ -122,7 +122,7 @@ Page {
 
                     objectName: "btnAddTopic"
                     text: i18n.tr("Add feed")
-                    color: "#21b8e9"
+                    color: "#EB6536"
                     anchors { fill: parent; margins: units.gu(2) }
                     onClicked: pageStack.push(appendFeedPage, topicManagement)
                 }

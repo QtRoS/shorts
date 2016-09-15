@@ -51,7 +51,7 @@ Page {
                 style: Text.Raised
                 styleColor: "black"
                 textFormat: Text.PlainText
-                font.pixelSize: units.gu(6)
+                font.pixelSize: units.gu(7)
                 anchors {
                     left: parent.left
                     leftMargin: units.gu(1)
@@ -74,28 +74,28 @@ Page {
                 }
             }
 
-            ActionIcon {
-                id: actionSetting
-                objectName:"actionSetting"
-                icon {
-                    width: units.gu(3)
-                    color: "#EB6536"
-                    name: "settings"
-                }
-                text {
-                    text: "Settings"
-                    color: "white"
-                    font.italic: true
-                    style: Text.Raised
-                }
-                anchors {
-                    right: parent.right
-                    rightMargin: units.gu(1)
-                    bottom: parent.bottom
-                    bottomMargin: units.gu(0.5)
-                }
-                onClicked: pageStack.push(settingsPage, mainPage)
-            }
+//            ActionIcon {
+//                id: actionSetting
+//                objectName:"actionSetting"
+//                icon {
+//                    width: units.gu(3)
+//                    color: "#EB6536"
+//                    name: "settings"
+//                }
+//                text {
+//                    text: i18n.tr("Settings")
+//                    color: "white"
+//                    font.italic: true
+//                    style: Text.Raised
+//                }
+//                anchors {
+//                    right: parent.right
+//                    rightMargin: units.gu(1)
+//                    bottom: parent.bottom
+//                    bottomMargin: units.gu(0.5)
+//                }
+//                onClicked: pageStack.push(settingsPage, mainPage)
+//            }
         }
 
 
@@ -151,7 +151,7 @@ Page {
                         }
 
                         Text {
-                            text: "All articles"
+                            text: i18n.tr("All articles")
                             color: "#404244"
                             font.bold: true
                             anchors {
@@ -182,7 +182,7 @@ Page {
                         }
 
                         Text {
-                            text: "Saved"
+                            text: i18n.tr("Saved")
                             color: "#404244"
                             font.bold: true
                             anchors {
@@ -235,7 +235,7 @@ Page {
                 height: units.gu(3)
 
                 Label {
-                    text: "Topics"
+                    text: i18n.tr("Topics")
                     color: "black"
                     anchors {
                         verticalCenter: parent.verticalCenter
@@ -265,7 +265,7 @@ Page {
                         name: "edit"
                     }
                     text {
-                        text: "Edit"
+                        text: i18n.tr("Edit")
                         color: "#404244"
                         font.italic: true
                     }
@@ -291,7 +291,11 @@ Page {
 
             Text {
                 color: "#404244"
-                anchors.centerIn: parent
+                anchors {
+                    centerIn: parent
+                    verticalCenterOffset: -units.gu(0.5)
+                }
+
                 text: model.title
             }
 
@@ -322,15 +326,96 @@ Page {
                 visible: !(model.index % 2)
             }
 
+            Label {
+                color: "grey"
+                anchors {
+                    left: parent.left
+                    leftMargin: units.gu(1)
+                    bottom: parent.bottom
+                    bottomMargin: units.gu(0.5)
+                }
+                textSize: Label.XSmall
+                text: "Feeds: %1, articles: %2/%3".arg(model.feed_count).arg(model.article_unread_count).arg(model.article_count)
+            }
+
             onClicked: showTopicById(model.topicId, model.title)
         }
     }
 
+    Rectangle {
+        color: "white"
+        z: 1
+        height: units.gu(4)
+        anchors {
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+
+        ActionIcon {
+            id: settingsBottomAction
+            objectName:"settingsBottomAction"
+            icon {
+                width: units.gu(2.5)
+                color: "#EB6536"
+                name: "settings"
+            }
+            text {
+                text: i18n.tr("Settings")
+                color: "#404244"
+                font.italic: true
+            }
+            height: parent.height
+            anchors {
+                left: parent.left
+                right: parent.horizontalCenter
+                verticalCenter: parent.verticalCenter
+            }
+            onClicked: pageStack.push(settingsPage, mainPage)
+        }
+
+        ActionIcon {
+            id: addReadsBottomAction
+            objectName:"addReadsBottomAction"
+            icon {
+                width: units.gu(2.5)
+                color: "#EB6536"
+                name: "add"
+            }
+            text {
+                text: i18n.tr("Add feeds")
+                color: "#404244"
+                font.italic: true
+            }
+            height: parent.height
+            anchors {
+                right: parent.right
+                left: parent.horizontalCenter
+                verticalCenter: parent.verticalCenter
+            }
+            onClicked: pageStack.push(appendFeedPage, mainPage)
+        }
+
+        Rectangle {
+            color: "#404244"
+            anchors {
+                right: parent.right
+                left: parent.left
+                top: parent.top
+            }
+            height: units.gu(0.25)
+        }
+    }
+
     function reloadPageContent() {
-        var tags = DB.loadTags()
+        var tags = DB.loadTagsEx()
         topicModel.clear()
         for (var i = 0; i< tags.rows.length; i++) {
+            console.log(tags.rows.item(i).feed_count, tags.rows.item(i).article_count)
             topicModel.append({ "title" : tags.rows.item(i).name,
+                                  "feed_count" : tags.rows.item(i).feed_count,
+                                  "article_count" : tags.rows.item(i).article_count,
+                                  "article_unread_count" : tags.rows.item(i).article_unread_count,
                                   "topicId" : tags.rows.item(i).id })
         }
     }

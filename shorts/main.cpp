@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
     view.engine()->rootContext()->setContextProperty("utilities", utilities);
 
     view.setSource(QUrl(QStringLiteral("qrc:///qml/shorts-app.qml")));
-//    view.setSource(QUrl("./share/qml/shorts-app.qml"));
     view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.show();
     return app.exec();

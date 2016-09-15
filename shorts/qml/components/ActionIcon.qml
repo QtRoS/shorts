@@ -20,7 +20,7 @@ AbstractButton {
         id: contentRow
 
         spacing: units.gu(0.5)
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.centerIn: parent
 
         Text {
             id: _text

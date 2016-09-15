@@ -38,7 +38,7 @@ Item {
 
                 property bool useNoImageIcon: (pic.width == 0 || !model.image)
 
-                color: model.status == "1" ? "#e5e4e5" : "#b0dded"
+                color: model.status == "1" ? "#e5e4e5" : "#D6BCD3"
                 anchors {
                     fill: parent
                     leftMargin: units.gu(2)
@@ -53,7 +53,7 @@ Item {
                     height: parent.height
                     x: units.gu(0.6)
                     y: units.gu(0.6)
-                    color: model.status == "1" ? "#aacccccc" : "#3333b5e5"
+                    color: model.status == "1" ? "#aacccccc" : "#F1E8F8"
                 }
 
                 Item {

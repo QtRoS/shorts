@@ -153,30 +153,6 @@ function updateFeedByXml(id, link, description, title)   // from xml file
     return dbResult
 }
 
-function updateFeedImage(id, image)  //  offline image path
-{
-    var db = openStdDataBase()
-    var dbResult
-    db.transaction(function (tx) {
-        dbResult = tx.executeSql('UPDATE feed SET image=? WHERE id=?',
-                                 [image, id])
-        console.log("feed UPDATE, AFFECTED ROWS: ", dbResult.rowsAffected)
-    })
-    return dbResult
-}
-
-function updateFeedCount(id, count)  //
-{
-    var db = openStdDataBase()
-    var dbResult
-    db.transaction(function (tx) {
-        dbResult = tx.executeSql('UPDATE feed SET count=? WHERE id=?',
-                                 [count, id])
-        console.log("feed UPDATE, AFFECTED ROWS: ", dbResult.rowsAffected)
-    })
-    return dbResult
-}
-
 // delete
 function deleteFeed(id)
 {
@@ -528,8 +504,23 @@ function loadTags()
     var dbResult
 
     db.transaction(function(tx) {
-        dbResult = tx.executeSql("SELECT * FROM tag")
+        dbResult = tx.executeSql("select * from tag")
         //console.assert(dbResult.rows.length !== 0, "ERROR: NO TAGS DATABASE")
+    })
+    return dbResult;
+}
+
+function loadTagsEx()
+{
+    var db = openStdDataBase()
+    var dbResult
+
+    db.transaction(function(tx) {
+        dbResult = tx.executeSql("select t.*, \
+                                         (select count(*) from feed_tag ft where ft.tag_id = t.id) as feed_count,
+                                         (select count(a.id) from feed_tag ft join article a on a.feed_id = ft.feed_id where ft.tag_id = t.id) as article_count, \
+                                         (select count(a.id) from feed_tag ft join article a on a.feed_id = ft.feed_id where ft.tag_id = t.id and a.status = '0') as article_unread_count \
+                                  from tag t ")
     })
     return dbResult;
 }

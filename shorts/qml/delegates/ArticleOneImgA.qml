@@ -19,7 +19,7 @@ Rectangle
     width: units.gu(18)
     height: units.gu(33) /*content.height + units.gu(1.5)*/
 //    color: invalid ? "black" : modelItem.status == "1" ? "#55cccccc" : "#5533b5e5"
-    color: invalid ? "black" : modelItem.status == "1" ? "#e5e4e5" : "#b0dded"
+    color: invalid ? "black" : modelItem.status == "1" ? "#e5e4e5" : "#D6BCD3"
 
     onModelItemChanged: {
         if (modelItem == null) {
@@ -33,7 +33,7 @@ Rectangle
         height: parent.height
         x: units.gu(0.6)
         y: units.gu(0.6)
-        color: invalid ? "black" : modelItem.status == "1" ? "#aacccccc" : "#3333b5e5"
+        color: invalid ? "black" : modelItem.status == "1" ? "#aacccccc" : "#F1E8F0"
     }
 
     Item {

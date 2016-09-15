@@ -1,7 +1,7 @@
 {
     "architecture": "@CLICK_ARCH@",
-    "description": "Rss Reader application",
-    "framework": "ubuntu-sdk-15.04.1-qml",
+    "description": "RSS Reader application",
+    "framework": "ubuntu-sdk-15.04.4",
     "hooks": {
         "shorts": {
             "apparmor": "shorts.apparmor",
@@ -12,7 +12,7 @@
     "maintainer": "Ubuntu App Cats <ubuntu-touch-coreapps@lists.launchpad.net>",
     "name": "@PROJECT_NAME@",
     "title": "Shorts",
-    "version": "2.0.@BZR_REVNO@",
+    "version": "3.1.@BZR_REVNO@",
     "x-source": {
         "vcs-bzr": "@BZR_SOURCE@",
         "vcs-bzr-revno": "@BZR_REVNO@"
