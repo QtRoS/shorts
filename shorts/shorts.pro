@@ -7,7 +7,8 @@ QT += qml quick
 
 SOURCES += main.cpp \
     CachingNetworkManagerFactory.cpp \
-    xml2json/utilities.cpp
+    xml2json/utilities.cpp \
+    networkmanager.cpp
 
 RESOURCES += shorts.qrc
 
@@ -100,4 +101,8 @@ HEADERS += \
     xml2json/rapidxml/rapidxml_iterators.hpp \
     xml2json/rapidxml/rapidxml_print.hpp \
     xml2json/rapidxml/rapidxml_utils.hpp \
-    xml2json/xml2json.hpp
+    xml2json/xml2json.hpp \
+    networkmanager.h
+
+DISTFILES += \
+    qml/content/YadSyncHelper.qml

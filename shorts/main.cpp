@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
     CachingNetworkManagerFactory *managerFactory = new CachingNetworkManagerFactory();
     view.engine()->setNetworkAccessManagerFactory(managerFactory);
 
-    Utilities *utilities = new Utilities();
-    view.engine()->rootContext()->setContextProperty("utilities", utilities);
+    view.engine()->rootContext()->setContextProperty("utilities",  new Utilities());
+    view.engine()->rootContext()->setContextProperty("networkManager", new NetworkManager());
 
     view.setSource(QUrl(QStringLiteral("qrc:///qml/shorts-app.qml")));
     view.setResizeMode(QQuickView::SizeRootObjectToView);
