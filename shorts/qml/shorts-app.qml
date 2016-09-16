@@ -324,7 +324,7 @@ MainView {
 
                 optionsKeeper.yadToken = token
                 // networkManager.token = token TODO
-                pageStack.pop(settingsPage)
+                pageStack.pop(yadLoginPage)
             }
         }
     } // PageStack

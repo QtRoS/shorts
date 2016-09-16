@@ -30,7 +30,6 @@ Page {
     objectName: "appendfeedpage"
     visible: false
 
-    property var anotherPageStack: null
     property int selectedCount: 0
     property bool resultsReceived: false // Indicates that at least once results were received.
 
@@ -69,7 +68,6 @@ Page {
 
                     if (pageStack)
                         pageStack.push(chooseTopicPage, appendFeedPage, false, {"feedsToAdd" : selectedFeeds, "parentPage" : appendFeedPage})
-                    else anotherPageStack.push(chooseTopicPage, mainPage, false, {"feedsToAdd" : selectedFeeds, "parentPage" : mainPage})
                 }
             }
         ]

@@ -3,7 +3,8 @@
         "networking",
         "content_exchange_source",
         "content_exchange",
-        "location"
+        "location",
+        "webview"
     ],
     "policy_version": 1.3
 }

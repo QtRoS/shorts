@@ -29,7 +29,6 @@ Page {
         id: pageHeader
         title: i18n.tr("Log in")
         flickable: null
-        //leadingActionBar.actions: [ ]
 
         trailingActionBar.actions: [
             Action {

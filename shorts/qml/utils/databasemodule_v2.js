@@ -23,7 +23,6 @@ function checkTableExists(transaction /* and additional string keys */) {
     transaction.executeSql("CREATE TABLE IF NOT EXISTS tag  (id  INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,name  TEXT  NOT NULL UNIQUE );")
     transaction.executeSql("CREATE TABLE IF NOT EXISTS feed_tag  (id  INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,feed_id  INTEGER  NULL,tag_id  INTEGER  NULL,FOREIGN KEY(feed_id) REFERENCES feed(id) on delete cascade);")
     transaction.executeSql("CREATE TABLE IF NOT EXISTS article ( id  INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL, title  TEXT  NULL, content TEXT NULL, link  TEXT  NULL, description  TEXT  NULL, pubdate  INTEGER  NULL, status  char(1)  NULL DEFAULT '0', favourite  char(1)  NULL DEFAULT '0', image  TEXT  NULL, guid TEXT NULL, feed_id  INTEGER  NULL,count INTEGER NULL DEFAULT 0, media_groups TEXT NULL, author TEXT NULL);")
-    transaction.executeSql("CREATE TABLE IF NOT EXISTS settings  ( id INTEGER, current_database_version TEXT NULL, database_last_updated  TEXT  NULL, view_mode char(1) NULL DEFAULT '0', update_interval INTEGER NULL DEFAULT 0, network_mode char(1) NULL DEFAULT '0');")
 }
 
 function adjustDb(dbParams) {
@@ -83,7 +82,7 @@ function loadFeeds()
         dbResult = tx.executeSql("SELECT * FROM feed")
         console.log("feed SELECTED: ", dbResult.rows.length)
     })
-    return dbResult;  // I suggest that return the whole result in order to know if error occurs
+    return dbResult;
 }
 
 // insert
@@ -269,13 +268,13 @@ function loadTagHighlights(size) {
                                  from article a \
                                  inner join feed f on a.feed_id = f.id \
                                  inner join feed_tag ft on ft.feed_id = f.id \
-                                 inner join tag t on t.id = ft.tag_id
+                                 inner join tag t on t.id = ft.tag_id \
                                  where a.id in (%1) \
                                  order by t.id, a.pubdate desc'.arg(param)) // Don't know why, but it doesn't work with commas in param
 
         //.console.log(idArray.length, idArray)
     })
-    console.log("loadTagHighlights", dbResult.rows.length)
+    //console.log("loadTagHighlights", dbResult.rows.length)
     return dbResult
 }
 
@@ -701,19 +700,12 @@ function clearData(table)
             console.log("feed_tag clear")
         })
         break;
-    case "settings":
-        db.transaction(function(tx) {
-            tx.executeSql("delete from settings")
-            console.log("settings clear")
-        })
-        break;
     default:
         db.transaction(function(tx) {
             tx.executeSql("delete from feed_tag")
             tx.executeSql("delete from feed")
             tx.executeSql("delete from tag")
             tx.executeSql("delete from article")
-            tx.executeSql("delete from settings")
             console.log("DATABASE clear")
         })
     }
@@ -750,19 +742,12 @@ function dropTable(table)
             console.log("feed_tag deleted")
         })
         break;
-    case "settings":
-        db.transaction(function(tx) {
-            tx.executeSql("DROP TABLE IF EXISTS settings")
-            console.log("settings deleted")
-        })
-        break;
     default:
         db.transaction(function(tx) {
             tx.executeSql("DROP TABLE IF EXISTS feed")
             tx.executeSql("DROP TABLE IF EXISTS article")
             tx.executeSql("DROP TABLE IF EXISTS tag")
             tx.executeSql("DROP TABLE IF EXISTS feed_tag")
-            tx.executeSql("DROP TABLE IF EXISTS settings")
             console.log("DATABASE deleted")
         })
     }
