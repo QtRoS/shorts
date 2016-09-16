@@ -297,6 +297,7 @@ Page {
                 }
 
                 text: model.title
+                font.weight: Font.DemiBold
             }
 
             Rectangle {
