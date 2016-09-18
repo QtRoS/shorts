@@ -5,8 +5,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import "../utils/dateutils.js" as DateUtils
 
 //UbuntuShape
-Rectangle
-{
+Rectangle {
     id: articleFullImg
 
     property bool invalid: false
