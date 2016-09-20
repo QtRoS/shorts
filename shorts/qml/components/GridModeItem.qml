@@ -13,21 +13,11 @@ Item {
 
     function reload () {
         gridViewModel = getModel()
-        //organicGridView.reload()
     }
 
     function clear() {
         gridViewModel = null
-        //organicGridView.clear()
     }
-
-    //    function triggerLoadMore() {
-    //        organicGridView.loadMore()
-    //    }
-
-    //    OrganicGrid {
-    //        id: organicGridView
-    //    }
 
     Component {
         id: gridModeDelegate
@@ -70,7 +60,7 @@ Item {
                         left: parent.left
                         right: parent.right
                     }
-                    height: pic.height //  > (articleFullImg.height * 0.46) ? (articleFullImg.height * 0.46) : pic.height
+                    height: pic.height
                     opacity: height
                     Image {
                         id: pic
@@ -170,137 +160,12 @@ Item {
         }
     }
 
-    //    Component {
-    //        id: gridModeDelegate
-
-    //        ListItem {
-    //            id: listItem
-
-    //            property bool useNoImageIcon: !model.image
-
-    //            height: units.gu(20)
-    //            onClicked: mainView.showArticle(listViewModel, model.index)
-
-
-    //            ListItemLayout {
-    //                anchors.fill: parent
-
-    //                Rectangle {
-    //                    id: uPic
-
-    //                    SlotsLayout.position: SlotsLayout.Leading
-    //                    SlotsLayout.overrideVerticalPositioning: true
-
-    //                    y: units.gu(2)
-    //                    height: units.gu(14) + units.dp(4)
-    //                    width: units.gu(14) + units.dp(4)
-    //                    color: "transparent"
-    //                    border {
-    //                        width: units.dp(2)
-    //                        color: listItem.useNoImageIcon || pic.status == Image.Loading ? "transparent" : (model.status == "1" ? "lightgrey" : "#EB6536")
-    //                    }
-
-    //                    Image {
-    //                        id: pic
-
-    //                        fillMode: Image.PreserveAspectCrop
-    //                        height: units.gu(14)
-    //                        width: units.gu(14)
-    //                        sourceSize {
-    //                            width: height * 2
-    //                            //height: units.gu(20)
-    //                        }
-
-    //                        source: selectIcon()
-    //                        anchors.centerIn: parent
-
-    //                        function selectIcon() {
-    //                            var img = model.image
-    //                            return !model.image ? "" : model.image
-    //                        }
-
-    //                        Behavior on height { UbuntuNumberAnimation{} }
-    //                        Behavior on opacity { NumberAnimation{} }
-
-
-    //                        ActivityIndicator {
-    //                            id: loadingIndicator
-    //                            anchors.centerIn: parent
-    //                            running: pic.status == Image.Loading
-    //                            visible: running
-    //                        }
-    //                    }
-
-    //                    Icon {
-    //                        anchors.centerIn: parent
-    //                        visible: listItem.useNoImageIcon && !loadingIndicator.running
-    //                        color: model.status == "1" ? "lightgrey" : "#EB6536"
-    //                        name: "ubuntu-logo-symbolic"
-    //                        width: units.gu(6)
-    //                        height: units.gu(6)
-    //                    }
-    //                }
-
-    //                Icon {
-    //                    id: imgFavourite
-    //                    SlotsLayout.position: SlotsLayout.Trailing
-    //                    width: units.gu(2); height: width
-    //                    name: "favorite-selected"
-    //                    visible: model.favourite == "1"
-    //                }
-
-    //                title {
-    //                    text: model.title
-    //                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-    //                    fontSize: "small"
-    //                    textFormat: Text.PlainText
-    //                    font.weight: Font.DemiBold
-    //                    elide: Text.ElideRight
-    //                    maximumLineCount: 3
-    //                }
-
-    //                subtitle {
-    //                    text: model.content //model.feed_name
-    //                    fontSize: "x-small"
-    //                    textFormat: Text.PlainText
-    //                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-    //                    elide: Text.ElideRight
-    //                    maximumLineCount: 5
-    //                }
-
-    //                summary {
-    //                    text: DateUtils.formatRelativeTime(i18n, model.pubdate)
-    //                    fontSize: "x-small"
-    //                    textFormat: Text.PlainText
-    //                    wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-    //                }
-    //            }
-
-    //            Rectangle {
-    //                color: "#EB6536"
-    //                width: units.gu(0.5)
-    //                visible: model.status != "1"
-    //                anchors {
-    //                    right: parent.right
-    //                    top: parent.top
-    //                    bottom: parent.bottom
-    //                }
-    //            }
-
-    //        } //ListItem
-    //    } // Component
-
     GridView {
         id: articleGrid
 
         clip: true
         flow: GridView.FlowTopToBottom
-        anchors {
-            fill: parent
-//            leftMargin: units.gu(1)
-//            topMargin: units.gu(1)
-        }
-
+        anchors.fill: parent
         model: gridViewModel
         cellWidth: units.gu(26)
         cellHeight: units.gu(22)

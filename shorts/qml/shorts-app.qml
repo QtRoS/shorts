@@ -451,7 +451,6 @@ MainView {
         target: chooseTopicPage
 
         onTopicChoosen: {
-            mainPage.bottomEdge.collapse()
             networkManager.updateFeeds(addedFeeds, topicId)
             reloadMainView()
         }
