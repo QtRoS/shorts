@@ -8,11 +8,11 @@ Page {
     id: pageSettings
 
     visible: false
-    flickable: null
 
     header: PageHeader {
         id: pageHeader
         title: i18n.tr("Settings")
+        flickable: null
     }
 
     property bool preventSave: false
@@ -93,12 +93,16 @@ Page {
                 onClicked: {
                     if (parent.loggedIn) {
                         optionsKeeper.yadToken = ""
-                        yadLoginPage.logout()
-                        pageStack.push(yadLoginPage, pageSettings, false, { } )
+                        yadLoginPageLoader.doAction(function(page) {
+                            page.logout()
+                            pageStack.push(page, pageSettings, false, { } )
+                        })
                     }
                     else {
-                        pageStack.push(yadLoginPage, pageSettings, false, { } )
-                        yadLoginPage.login()
+                        yadLoginPageLoader.doAction(function(page) {
+                            pageStack.push(page, pageSettings, false, { } )
+                            page.login()
+                        })
                     }
                 }
             }

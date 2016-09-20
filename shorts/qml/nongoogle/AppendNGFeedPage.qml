@@ -27,7 +27,6 @@ Page {
     id: appendNgFeedPage
 
     objectName: "appendNgFeedPage"
-    //title: i18n.tr("Add feeds")
     flickable: null
     visible: false
 
@@ -42,7 +41,7 @@ Page {
 
                 onTriggered: {
                     xmlFeedApi.abort()
-                    pageStack.pop(appendFeedPage)
+                    pageStack.pop(appendNgFeedPage)
                 }
             }
         ]

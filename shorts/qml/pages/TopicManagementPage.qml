@@ -124,7 +124,7 @@ Page {
                     text: i18n.tr("Add feed")
                     color: "#EB6536"
                     anchors { fill: parent; margins: units.gu(2) }
-                    onClicked: pageStack.push(appendFeedPage, topicManagement)
+                    onClicked: appendFeedPageLoader.doAction(function(page) { pageStack.push(page, topicManagement) }) // pageStack.push(appendFeedPage, topicManagement)
                 }
             }
 

@@ -25,7 +25,32 @@ Page {
     header: PageHeader {
         id: pageHeader
 
-        trailingActionBar.actions: pageStack ? pageStack.commonHeadActions : null
+        trailingActionBar.actions: [
+            Action {
+                id: refreshAction
+
+                text:  i18n.tr("Refresh")
+                iconName: "reload"
+                onTriggered: mainView.refresh()
+            },
+            Action {
+                id: changeModeAction
+                text:  optionsKeeper.useListMode ? i18n.tr("Grid View") : i18n.tr("List view")
+                iconName: optionsKeeper.useListMode ? "view-grid-symbolic" : "view-list-symbolic"
+                onTriggered: {
+                    optionsKeeper.useListMode = !optionsKeeper.useListMode
+                }
+            },
+            Action {
+                id: nightModeAction
+                objectName:"nightModeAction"
+                text: optionsKeeper.useDarkTheme ? i18n.tr("Disable night mode") : i18n.tr("Enable night mode")
+                iconName: "night-mode"
+                onTriggered: {
+                    optionsKeeper.useDarkTheme = !optionsKeeper.useDarkTheme
+                }
+            }
+        ]
     }
 
     ListModeItem {

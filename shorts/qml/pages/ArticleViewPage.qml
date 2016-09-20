@@ -50,7 +50,9 @@ Page {
                 text:  i18n.tr("Share...")
                 iconName: "share"
                 onTriggered: {
-                    pageStack.push(sharePage, pageRoot, false, { "articleUrl" : innerArticleView.modelItem.link } )
+                    sharePageLoader.doAction(function(page) {
+                        pageStack.push(page, pageRoot, false, { "articleUrl" : innerArticleView.modelItem.link } )
+                    }) //pageStack.push(sharePage, pageRoot, false, { "articleUrl" : innerArticleView.modelItem.link } )
                 }
             },
 

@@ -36,12 +36,10 @@ MainView {
         DB.adjustDb(dbParams)
 
         if (dbParams.oldDbVersion != dbParams.newDbVersion)
-            optionsKeeper.setDbVersion(dbParams.newDbVersion)
+            optionsKeeper.dbVersion = dbParams.newDbVersion
 
-        if (dbParams.isRefreshRequired) {
-            topicManagement.reloadTopics()
-            refresh()
-        }
+        if (dbParams.isRefreshRequired)
+             refresh()
 
         reloadMainView()
     }
@@ -84,8 +82,10 @@ MainView {
     }
 
     function showArticle(model, index) {
-        articlePage.setFeed(model, index)
-        pageStack.push(articlePage, null, pageStack.useOrdinaryLayout)
+        articlePageLoader.doAction(function(page) {
+            page.setFeed(model, index)
+            pageStack.push(page, null, pageStack.useOrdinaryLayout)
+        })
     }
 
     // TODO BUG
@@ -109,7 +109,6 @@ MainView {
         }
         focus: true
 
-        property var commonHeadActions: [refreshAction, changeModeAction, nightModeAction]
         property bool useOrdinaryLayout: true
         property Page lastPushedPage: null  // Last page that was pushed to the first column of APL.
 
@@ -173,45 +172,16 @@ MainView {
 
             if (event.modifiers & Qt.ControlModifier) {
                 if (event.key === Qt.Key_A) {
-                    pageStack.push(appendFeedPage, mainPage)
+                    appendFeedPageLoader.doAction(function(page) { pageStack.push(page, mainPage) }) // pageStack.push(appendFeedPage, mainPage)
                 } else if (event.key === Qt.Key_R) {
                     refresh()
                 }
             }
 
             if (event.key == Qt.Key_Left) {
-                articlePage.articleView.showPrevArticle()
+                articlePageLoader.doAction(function(page) { page.articleView.showPrevArticle() })
             } else if (event.key == Qt.Key_Right) {
-                articlePage.articleView.showNextArticle()
-            }
-        }
-
-        /* -------------------------- Actions ---------------------------- */
-
-        Action {
-            id: refreshAction
-
-            text:  i18n.tr("Refresh")
-            iconName: "reload"
-            onTriggered: refresh()
-        }
-
-        Action {
-            id: changeModeAction
-            text:  optionsKeeper.useListMode ? i18n.tr("Grid View") : i18n.tr("List view")
-            iconName: optionsKeeper.useListMode ? "view-grid-symbolic" : "view-list-symbolic"
-            onTriggered: {
-                optionsKeeper.useListMode = !optionsKeeper.useListMode
-            }
-        }
-
-        Action {
-            id: nightModeAction
-            objectName:"nightModeAction"
-            text: optionsKeeper.useDarkTheme ? i18n.tr("Disable night mode") : i18n.tr("Enable night mode")
-            iconName: "night-mode"
-            onTriggered: {
-                optionsKeeper.useDarkTheme = !optionsKeeper.useDarkTheme
+                articlePageLoader.doAction(function(page) { page.articleView.showNextArticle() })
             }
         }
 
@@ -243,88 +213,85 @@ MainView {
             objectName: "TopicTab"
         }
 
-        // ******************************** Create Topic **********************///////////////
-
-        CreateTopicPage {
-            id: createTopicPage
-            visible: false
-            flickable: null
-        } // Page
-
-        // ******************************** APPEND FEED ***********************///////////////
-
-        AppendFeedPage {
-            id: appendFeedPage
-
-            title: i18n.tr("Add feeds")
-            flickable: null
-            visible: false
+        PageLoader {
+            id: appendFeedPageLoader
+            sourceComponent: AppendFeedPage { }
         }
 
-        AppendNGFeedPage {
-            id: appendNGFeedPage
-
-            title: i18n.tr("Add feeds")
-            flickable: null
-            visible: false
+        PageLoader {
+            id: appendNgFeedPageLoader
+            sourceComponent: AppendNGFeedPage { }
         }
-
-        // ******************************** Choose Topic Page ***********************///////////////
 
         ChooseTopicPage {
             id: chooseTopicPage
-            visible: false
-        }
-
-        // ******************************** Rss Feed Page ***********************///////////////
-
-        ArticleViewPage {
-            id: articlePage
-            visible: false
-
             Connections {
-                target: articlePage.articleView
-
-                onArticleStatusChanged: pageStack.updateStatusInModels(article, status)
-                onArticleFavouriteChanged: pageStack.updateFavouriteInModels(article, favourite)
+                target: chooseTopicPage
+                onTopicChoosen: {
+                    networkManager.updateFeeds(addedFeeds, topicId)
+                    reloadMainView()
+                }
             }
         }
 
-        // ******************************** Topic Management Page ***********************///////////////
-        TopicManagementPage {
-            id: topicManagement
-            visible: false
+        CreateTopicPage {
+            id: createTopicPage
+            Connections {
+                target: createTopicPage
+                onTopicAdded: reloadMainView()
+            }
         }
 
-        // ******************************** Settings Page ***********************///////////////
-        SettingsPage {
-            id: settingsPage
-            visible: false
-        }
-
-        // ******************************** Edit Feed Page ***********************///////////////
         EditFeedPage {
             id: editFeed
             visible: false
         }
 
-        // ******************************** Share Page ***********************///////////////
-        SharePage {
-            id: sharePage
-            visible: false
+        PageLoader {
+            id: articlePageLoader
+            sourceComponent: ArticleViewPage {
+                id: articlePage
+                Connections {
+                    target: articlePage.articleView
+
+                    onArticleStatusChanged: pageStack.updateStatusInModels(article, status)
+                    onArticleFavouriteChanged: pageStack.updateFavouriteInModels(article, favourite)
+                }
+            }
         }
 
-        // ******************************** Share Page ***********************///////////////
-        YadLoginPage {
-            id: yadLoginPage
-            visible: false
+        PageLoader {
+            id: topicManagementPageLoader
+            sourceComponent: TopicManagementPage {
+                id: topicManagement
+                Connections {
+                    target: topicManagement
+                    onFeedEdit: reloadMainView()
+                    onTopicDeleted: reloadMainView()
+                }
+            }
+        }
 
-            onAuthPassed: {
-                console.log("TOKEN", token)
+        PageLoader {
+            id: settingsPageLoader
+            sourceComponent: SettingsPage { }
+        }
 
-                optionsKeeper.yadToken = token
-                // networkManager.token = token TODO
-                pageStack.pop(yadLoginPage)
+        PageLoader {
+            id: sharePageLoader
+            sourceComponent: SharePage { }
+        }
+
+        PageLoader {
+            id: yadLoginPageLoader
+            sourceComponent: YadLoginPage {
+                id: yadLoginPage
+                onAuthPassed: {
+                    console.log("TOKEN", token)
+                    optionsKeeper.yadToken = token
+                    // networkManager.token = token TODO
+                    pageStack.pop(yadLoginPage)
+                }
             }
         }
     } // PageStack
@@ -415,7 +382,7 @@ MainView {
             id: dialogNG
             title: i18n.tr("Warning")
             text: i18n.tr("Shorts detects that you're located in an area which blocks Google's IP.<br><br>"
-                          + "We strongly reconmend you to turn off the Google search funtion."
+                          + "We strongly recommend you to turn off the Google search funtion."
                           + "Or you can do it in the settings page manually.")
 
             Button {
@@ -423,7 +390,7 @@ MainView {
                 color: UbuntuColors.orange
                 objectName: "dialogNGButtonYes"
                 onClicked: {
-                    optionsKeeper.setUseGoogleSearch(false)
+                    optionsKeeper.useGoogleSearch = false
                     PopupUtils.close(dialogNG)
                 }
             }
@@ -435,39 +402,6 @@ MainView {
             }
         }
     } // Component
-
-    /* -------------------------- Connections ---------------------------- */
-
-    Connections {
-        target: createTopicPage
-
-        onTopicAdded: {
-            //reloadViews()
-            reloadMainView()
-        }
-    }
-
-    Connections {
-        target: chooseTopicPage
-
-        onTopicChoosen: {
-            networkManager.updateFeeds(addedFeeds, topicId)
-            reloadMainView()
-        }
-    }
-
-    Connections {
-        target: topicManagement
-
-        onFeedEdit: {
-            console.log("onFeedEdit: ", topicId)
-            reloadMainView()
-        }
-
-        onTopicDeleted: {
-            reloadMainView()
-        }
-    }
 
     // Shader workaround.
     Rectangle {

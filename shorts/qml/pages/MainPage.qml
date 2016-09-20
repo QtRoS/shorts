@@ -274,7 +274,7 @@ Page {
                         rightMargin: units.gu(1)
                         verticalCenter: parent.verticalCenter
                     }
-                    onClicked: pageStack.push(topicManagement, mainPage)
+                    onClicked: topicManagementPageLoader.doAction( function(page) { pageStack.push(page, mainPage) }) //pageStack.push(topicManagement, mainPage)
                 }
             }
         }
@@ -373,7 +373,7 @@ Page {
                 right: parent.horizontalCenter
                 verticalCenter: parent.verticalCenter
             }
-            onClicked: pageStack.push(settingsPage, mainPage)
+            onClicked: settingsPageLoader.doAction(function(page) { pageStack.push(page, mainPage) }) // pageStack.push(settingsPage, mainPage)
         }
 
         ActionIcon {
@@ -395,7 +395,7 @@ Page {
                 left: parent.horizontalCenter
                 verticalCenter: parent.verticalCenter
             }
-            onClicked: pageStack.push(appendFeedPage, mainPage)
+            onClicked: appendFeedPageLoader.doAction(function(page) { pageStack.push(page, mainPage) }) //pageStack.push(appendFeedPage, mainPage)
         }
 
         Rectangle {

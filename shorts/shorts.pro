@@ -28,6 +28,7 @@ OTHER_FILES += ..\shorts.apparmor \
     qml/components/NetworkManager.qml \
     qml/components/OptionsKeeper.qml \
     qml/components/OrganicGrid.qml \
+    qml/components/PageLoader.qml \
     qml/components/ReadingOptions.qml \
     qml/components/DarkModeShader.qml \
     qml/delegates/ArticleFullImg.qml \
@@ -105,4 +106,5 @@ HEADERS += \
     networkmanager.h
 
 DISTFILES += \
-    qml/content/YadSyncHelper.qml
+    qml/content/YadSyncHelper.qml \
+    qml/components/PageLoader.qml

@@ -38,6 +38,7 @@
         <file>qml/nongoogle/Positioner.qml</file>
         <file>qml/pages/YadLoginPage.qml</file>
         <file>qml/content/YadApi.qml</file>
+        <file>qml/components/PageLoader.qml</file>
     </qresource>
     <qresource prefix="/img">
         <file>qml/icons/add.svg</file>
