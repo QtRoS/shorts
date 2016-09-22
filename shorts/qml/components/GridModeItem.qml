@@ -23,19 +23,14 @@ Item {
         id: gridModeDelegate
 
         Item {
-            width: units.gu(26)
-            height: units.gu(22)
+            width: articleGrid.cellWidth
+            height: articleGrid.cellHeight
 
             Rectangle {
                 id: articleFullImg
 
-                property bool invalid: false
-                property var modelItem
-                property var rssModel
-                property int modelIndex
-
-                width: units.gu(24)
-                height: units.gu(20)
+                width: parent.width - units.gu(2)
+                height: parent.height - units.gu(2)
                 anchors.centerIn: parent
                 color: model.status == "1" ? "#e5e4e5" : "#D6BCD3"
 
@@ -65,10 +60,10 @@ Item {
                     Image {
                         id: pic
                         fillMode: Image.PreserveAspectCrop
-                        width: (implicitHeight < 50 || implicitWidth < 50) ? 0 : parent.width
+                        width: parent.width
                         height:  implicitHeight > (articleFullImg.height * 0.46) ? (articleFullImg.height * 0.46) : implicitHeight
                         source: model.image ? model.image : ""
-                        sourceSize.width: uPic.width
+                        sourceSize.width: units.gu(26) * 1.5
                     }
 
                     Behavior on height { UbuntuNumberAnimation {} }
@@ -167,9 +162,26 @@ Item {
         flow: GridView.FlowTopToBottom
         anchors.fill: parent
         model: gridViewModel
-        cellWidth: units.gu(26)
-        cellHeight: units.gu(22)
-
         delegate: gridModeDelegate
+        cellWidth: units.gu(26)
+
+        onHeightChanged: {
+            var baseHeight = units.gu(22)
+            var smallItemHeight = Math.floor(0.85 * baseHeight)
+            var fitAmount = Math.floor(height / smallItemHeight)
+            fitAmount = fitAmount || 1 // Boilerplate code.
+            cellHeight = Math.floor( 1.0 * height / fitAmount)
+        }
+//        onHeightChanged: {
+//            var baseHeight = units.gu(22)
+//            var smallItemHeight = Math.floor(0.85 * baseHeight)
+//            var fitAmount = Math.floor(height / smallItemHeight)
+//            fitAmount = fitAmount || 1 // Boilerplate code.
+//            var calculatedHeight = Math.floor( 1.0 * height / fitAmount)
+//            var scaleFactor = calculatedHeight / baseHeight
+//            console.log(height, smallItemHeight, fitAmount, calculatedHeight, units.gu(22) * scaleFactor, scaleFactor)
+//            cellWidth = units.gu(26) // * scaleFactor
+//            cellHeight = calculatedHeight
+//        }
     } // GridView
 }
