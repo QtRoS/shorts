@@ -223,29 +223,40 @@ MainView {
             sourceComponent: AppendNGFeedPage { }
         }
 
-        ChooseTopicPage {
-            id: chooseTopicPage
-            Connections {
-                target: chooseTopicPage
-                onTopicChoosen: {
-                    networkManager.updateFeeds(addedFeeds, topicId)
-                    reloadMainView()
+        PageLoader {
+            id: chooseTopicPageLoader
+            sourceComponent: ChooseTopicPage {
+                id: chooseTopicPage
+                Connections {
+                    target: chooseTopicPage
+                    onTopicChoosen: globalEventHandler.handleEvent(type)
                 }
             }
         }
 
-        CreateTopicPage {
-            id: createTopicPage
-            Connections {
-                target: createTopicPage
-                onTopicAdded: reloadMainView()
+        PageLoader {
+            id: createTopicPageLoader
+            sourceComponent: CreateTopicPage {
+                id: createTopicPage
+                Connections {
+                    target: createTopicPage
+                    onTopicAdded: globalEventHandler.handleEvent(type)
+                }
             }
         }
 
-        EditFeedPage {
-            id: editFeed
-            visible: false
+        PageLoader {
+            id: editFeedPageLoader
+            sourceComponent: EditFeedPage {
+                id: editFeedPage
+                Connections {
+                    target: editFeedPage
+                    onFeedEdited: globalEventHandler.handleEvent(type)
+                }
+            }
         }
+
+
 
         PageLoader {
             id: articlePageLoader
@@ -297,6 +308,28 @@ MainView {
     } // PageStack
 
     /* -------------------------- Utils ---------------------------- */
+
+    QtObject {
+        id: globalEventHandler
+
+        function handleEvent(type) {
+            switch(type)
+            {
+            case "topicAdded":
+                reloadMainView()
+                topicManagementPageLoader.doAction(function(page) { page.reloadTopics() } )
+                break;
+            case "topicChoosen":
+                reloadMainView()
+                topicManagementPageLoader.doAction(function(page) { page.reloadTopics() } )
+                //networkManager.updateFeeds(addedFeeds, topicId)
+                break;
+            case "feedEdited":
+                topicManagementPageLoader.doAction(function(page) { page.reloadTopics() } )
+                break;
+            }
+        }
+    }
 
     NetworkManager {
         id: networkManager

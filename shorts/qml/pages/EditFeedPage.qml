@@ -23,7 +23,8 @@ Page {
                     if (previousTopicId != newTopicId) {
                         DB.deleteFeedTag(feedId, previousTopicId)
                         DB.addFeedTag(feedId, newTopicId)
-                        apply(feedId, newTopicId, previousTopicId)
+                        //apply(feedId, newTopicId, previousTopicId)
+                        feedEdited("feedEdited")
                     }
                     pageStack.pop(editPage)
                 }
@@ -31,8 +32,8 @@ Page {
         ]
     }
 
-    signal apply(int feedId, int newTopicId, int previousTopicId)
-    signal deleteFeed(int feedId, int topicId)
+    //signal apply(int feedId, int newTopicId, int previousTopicId)
+    signal feedEdited(string type)
 
     property int feedId
     property string feedTitle: ""

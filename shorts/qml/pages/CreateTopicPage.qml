@@ -12,7 +12,7 @@ Page {
     visible: false
     flickable: null
 
-    signal topicAdded()
+    signal topicAdded(string type)
 
     header: PageHeader {
         id: pageHeader
@@ -34,8 +34,7 @@ Page {
                         return
                     }
 
-                    /* Make first letter capital.
-                                     */
+                    /* Make first letter capital. */
                     topicName = topicName.charAt(0).toUpperCase() + topicName.slice(1)
 
                     var dbResult = DB.addTag(topicName)
@@ -56,7 +55,7 @@ Page {
                         }
                     }
 
-                    topicAdded()
+                    topicAdded("topicAdded")
                     pageStack.pop(createTopicPage)
                 }
             }
@@ -117,7 +116,6 @@ Page {
         clip: true
         anchors {
             bottom: parent.bottom
-            // bottomMargin: createTopicTools.height
             top: someColumn.bottom
         }
 

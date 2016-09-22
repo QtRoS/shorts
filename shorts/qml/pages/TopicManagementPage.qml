@@ -59,11 +59,12 @@ Page {
                 iconName: "add"
                 visible: topicManagement.state != "editMode"
 
-                onTriggered: pageStack.push(createTopicPage, topicManagement)
+                onTriggered: createTopicPageLoader.doAction(function(page) { pageStack.push(page, topicManagement) } )
             }
         ]
     }
 
+    // TODO BUG
     signal feedEdit(int topicId)
     signal topicDeleted()
 
@@ -209,27 +210,19 @@ Page {
                         }
                     }
 
-                    Connections {
-                        id: connEditFeed0
-                        target: editFeed
-
-                        onApply:{
-                            if (model.id == newTopicId || model.id == previousTopicId){
-                                topicItem.reloadFeed()
-                                topicItem.isExpanded = true
-                                feedEdit(previousTopicId)
-                                feedEdit(newTopicId)
-                            }
-                        }
-
-                        onDeleteFeed:{
-                            if (model.id == topicId){
-                                topicItem.reloadFeed()
-                                topicItem.isExpanded = true
-                                feedEdit(topicId)
-                            }
-                        }
-                    }
+//                    Connections {
+//                        id: connEditFeed0
+//                        target: editFeed
+                        // TODO BUG
+//                        onApply:{
+//                            if (model.id == newTopicId || model.id == previousTopicId){
+//                                topicItem.reloadFeed()
+//                                topicItem.isExpanded = true
+//                                feedEdit(previousTopicId)
+//                                feedEdit(newTopicId)
+//                            }
+//                        }
+//                    }
 
                 }
             } // listview
@@ -237,29 +230,29 @@ Page {
         } // column
     } // flickable
 
-    Connections{
-        id: connAddTopic
-        target: createTopicPage
+//    Connections{
+//        id: connAddTopic
+//        target: createTopicPage
 
-        onTopicAdded:{
-            reloadTopics()
-        }
-    }
+//        onTopicAdded:{
+//            reloadTopics()
+//        }
+//    }
 
-    Connections {
-        id: connAddFeed
-        target: chooseTopicPage
+//    Connections {
+//        id: connAddFeed
+//        target: chooseTopicPage
 
-        onTopicChoosen: {
-            reloadTopics()
-            for (var i = 0; i < topicModel.count; i++){
-                if (topicModel.get(i).id == topicId){
-                    topicList.currentIndex = i
-                    topicList.currentItem.isExpanded = true
-                }
-            }
-        }
-    }
+//        onTopicChoosen: {
+//            reloadTopics()
+//            for (var i = 0; i < topicModel.count; i++){
+//                if (topicModel.get(i).id == topicId){
+//                    topicList.currentIndex = i
+//                    topicList.currentItem.isExpanded = true
+//                }
+//            }
+//        }
+//    }
 
     states: [
         State {

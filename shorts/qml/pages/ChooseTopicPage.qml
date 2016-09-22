@@ -21,7 +21,8 @@ Page {
 
     property var feedsToAdd: null
     property Page parentPage: null
-    signal topicChoosen(int topicId, var addedFeeds)
+    //signal topicChoosen(int topicId, var addedFeeds)
+    signal topicChoosen(string type)
 
     function reloadPageContent() {
         suggestionTopicsModel.clear()
@@ -60,7 +61,8 @@ Page {
         }
 
         pageStack.pop(parentPage)
-        topicChoosen(tagId, updateList)
+        //topicChoosen(tagId, updateList)
+        topicChoosen("topicChoosen")
     }
 
     ListView {

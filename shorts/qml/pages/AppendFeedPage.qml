@@ -61,13 +61,13 @@ Page {
                     for (var i = 0; i < searchResultsModel.count; i++) {
                         var curItem = searchResultsModel.get(i)
 
-                        if (curItem.isSelected) {
+                        if (curItem.isSelected)
                             selectedFeeds.push(curItem)
-                        }
                     }
 
-                    if (pageStack)
-                        pageStack.push(chooseTopicPage, appendFeedPage, false, {"feedsToAdd" : selectedFeeds, "parentPage" : appendFeedPage})
+                    chooseTopicPageLoader.doAction(function(page) {
+                        pageStack.push(page, appendFeedPage, false, {"feedsToAdd" : selectedFeeds, "parentPage" : appendFeedPage})
+                    })
                 }
             }
         ]
