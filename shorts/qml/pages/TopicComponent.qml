@@ -250,7 +250,12 @@ Column {
                 height: units.gu(6)
 
                 onClicked: {
-                    mainView.editFeed(model.id, model.title, model.source, delegateFeed.topicId, topicManagement)
+                    //mainView.editFeed(model.id, model.title, model.source, delegateFeed.topicId, topicManagement)
+
+                    editFeedPageLoader.doAction( function(page) {
+                        page.setValues(model.id, model.title, model.source, delegateFeed.topicId)
+                        pageStack.push(page, topicManagement)
+                    })
                 }
 
 

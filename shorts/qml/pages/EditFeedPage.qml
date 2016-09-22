@@ -20,9 +20,10 @@ Page {
                 iconName: "ok"
                 text: i18n.tr("Done")
                 onTriggered: {
-                    if (previousTopicId != newTopicId) {
-                        DB.deleteFeedTag(feedId, previousTopicId)
-                        DB.addFeedTag(feedId, newTopicId)
+                    var newTopicId = __topics[seletorTopic.selectedIndex].id
+                    if (__prevTopicId !== newTopicId) {
+                        DB.deleteFeedTag(__feedId, __prevTopicId)
+                        DB.addFeedTag(__feedId, newTopicId)
                         feedEdited("feedEdited")
                     }
                     pageStack.pop(editPage)
@@ -33,41 +34,41 @@ Page {
 
     signal feedEdited(string type)
 
-    property int feedId
-    property string feedTitle: ""
-    property string feedURL: ""
-    property int previousTopicId
-    property int newTopicId
-    property var dbTags
-    property var topicArray
+    property int __prevTopicId
+    property int __feedId
+    property var __topics
 
     function setValues(feedid, title, url, pTopicId) {
-        feedId = feedid
-        feedTitle = title
-        feedURL = url
-        previousTopicId = pTopicId
-        newTopicId = pTopicId
-        topicArray = []
+        __prevTopicId = pTopicId
+        __feedId = feedid
+
         var tags = DB.loadTags()
-        var tArray = []
-        var tagsArray = []
-        var index
-        for (var i=0; i<tags.rows.length; i++) {
-            if(tags.rows[i].id == previousTopicId)
-                index = i
-            tArray.push(tags.rows[i].name)
-            tagsArray.push(tags.rows[i])
+        var topicArray = []
+        __topics = []
+
+        for (var i = 0; i < tags.rows.length; i++) {
+            if(tags.rows[i].id == __prevTopicId)
+                seletorTopic.selectedIndex = i
+            topicArray.push(tags.rows[i].name)
+            __topics.push(tags.rows[i])
         }
-        dbTags = tagsArray
-        topicArray = tArray
-        seletorTopic.selectedIndex = index
+
+        seletorTopic.model = topicArray
+        tfTitle.text = title
+        tfUrl.text = url
+        console.log("EDIT FEED", feedid, title, url, __prevTopicId, topicArray)
     }
 
     function reloadPageContent() { }
 
     Flickable {
         id: content
-        anchors { fill: parent; topMargin: units.gu(2) }
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: pageHeader.bottom
+            bottom: parent.bottom
+        }
         contentHeight: contentItem.childrenRect.height
         boundsBehavior: (contentHeight > editPage.height) ? Flickable.DragAndOvershootBounds : Flickable.StopAtBounds
 
@@ -86,9 +87,8 @@ Page {
                     anchors.verticalCenter: parent.verticalCenter
                 }
 
-                TextField
-                {
-                    text: feedTitle
+                TextField {
+                    id: tfTitle
                     width: parent.width - labelTitle.width - parent.spacing
                     anchors.verticalCenter: parent.verticalCenter
                     readOnly: true
@@ -108,7 +108,7 @@ Page {
                 }
 
                 TextField {
-                    text: feedURL
+                    id: tfUrl
                     width: parent.width - labelURL.width - parent.spacing
                     anchors.verticalCenter: parent.verticalCenter
                     readOnly: true
@@ -116,25 +116,11 @@ Page {
                 }
             }
 
-            ListItem.ValueSelector {
-                objectName: "valueselector"
+            ListItem.ItemSelector {
                 id: seletorTopic
+                objectName: "valueselector"
                 text: i18n.tr("Topic: ")
-                values: (topicArray && topicArray.length) ? topicArray : [""]
-
-                onSelectedIndexChanged: {
-                    var tArray = topicArray
-                    var topicname = tArray[seletorTopic.selectedIndex]
-                    var tags = dbTags
-                    console.log("detail: ", JSON.stringify(tags))
-                    for (var i=0; i<tags.length; i++) {
-                        if(tags[i].name == topicname) {
-                            newTopicId = tags[i].id
-                            break
-                        }
-                    }
-                    console.log("new topic id: ", newTopicId)
-                }
+                expanded: false
             }
         }
     }

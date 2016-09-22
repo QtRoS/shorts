@@ -88,14 +88,6 @@ MainView {
         })
     }
 
-    // TODO BUG
-    function editFeed(feedid, title, url, pTopicId, srcPage) {
-        editFeedPageLoader.doAction( function(page) {
-            page.setValues(feedid, title, url, pTopicId)
-            pageStack.push(page, srcPage)
-        })
-    }
-
     /* -------------------------- Visuals ---------------------------- */
     AdaptivePageLayout {
         id: pageStack
