@@ -54,7 +54,6 @@ Page {
             },
 
             Action {
-                //id: actionsButton
                 text: i18n.tr("Add topic")
                 iconName: "add"
                 visible: topicManagement.state != "editMode"
@@ -102,11 +101,10 @@ Page {
             top: pageHeader.bottom
             bottom: parent.bottom
         }
-        //anchors.fill: parent
         contentHeight: contentItem.childrenRect.height
         clip: true // TODO
 
-        Column{
+        Column {
             anchors{ left: parent.left; right: parent.right }
 
             /*
@@ -140,7 +138,6 @@ Page {
                 currentIndex: -1
 
                 property int feedSelectedIndex: -1
-                // property alias flickState: content.state
 
                 signal collapseAllItem()
 
@@ -159,9 +156,7 @@ Page {
                 delegate: MouseArea {
                     id: delegateRoot
 
-                    // property int visualIndex: VisualDataModel.itemsIndex
                     property alias isExpanded: topicItem.isExpanded
-                    // property alias isEditing: topicItem.isEditing
 
                     anchors { left: parent.left; right: parent.right }
                     height: topicItem.height
@@ -179,7 +174,6 @@ Page {
                         topicName: model.name
                         topicId: model.id
                         modelIndex: model.index
-                        // isSelected: VisualDataModel.itemsIndex == topicList.feedSelectedIndex
 
                         onEdit: {
                             if (topicList.currentItem)
@@ -225,34 +219,10 @@ Page {
 //                    }
 
                 }
-            } // listview
+            }
 
-        } // column
-    } // flickable
-
-//    Connections{
-//        id: connAddTopic
-//        target: createTopicPage
-
-//        onTopicAdded:{
-//            reloadTopics()
-//        }
-//    }
-
-//    Connections {
-//        id: connAddFeed
-//        target: chooseTopicPage
-
-//        onTopicChoosen: {
-//            reloadTopics()
-//            for (var i = 0; i < topicModel.count; i++){
-//                if (topicModel.get(i).id == topicId){
-//                    topicList.currentIndex = i
-//                    topicList.currentItem.isExpanded = true
-//                }
-//            }
-//        }
-//    }
+        }
+    }
 
     states: [
         State {

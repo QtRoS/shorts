@@ -23,7 +23,6 @@ Page {
                     if (previousTopicId != newTopicId) {
                         DB.deleteFeedTag(feedId, previousTopicId)
                         DB.addFeedTag(feedId, newTopicId)
-                        //apply(feedId, newTopicId, previousTopicId)
                         feedEdited("feedEdited")
                     }
                     pageStack.pop(editPage)
@@ -32,7 +31,6 @@ Page {
         ]
     }
 
-    //signal apply(int feedId, int newTopicId, int previousTopicId)
     signal feedEdited(string type)
 
     property int feedId
@@ -44,25 +42,25 @@ Page {
     property var topicArray
 
     function setValues(feedid, title, url, pTopicId) {
-        feedId = feedid ;
-        feedTitle = title ;
-        feedURL = url ;
-        previousTopicId = pTopicId ;
+        feedId = feedid
+        feedTitle = title
+        feedURL = url
+        previousTopicId = pTopicId
         newTopicId = pTopicId
-        topicArray = [] ;
-        var tags = DB.loadTags() ;
-        var tArray = [] ;
-        var tagsArray = [] ;
+        topicArray = []
+        var tags = DB.loadTags()
+        var tArray = []
+        var tagsArray = []
         var index
         for (var i=0; i<tags.rows.length; i++) {
             if(tags.rows[i].id == previousTopicId)
                 index = i
-            tArray.push(tags.rows[i].name) ;
-            tagsArray.push(tags.rows[i]) ;
+            tArray.push(tags.rows[i].name)
+            tagsArray.push(tags.rows[i])
         }
-        dbTags = tagsArray ;
-        topicArray = tArray ;
-        seletorTopic.selectedIndex = index ;
+        dbTags = tagsArray
+        topicArray = tArray
+        seletorTopic.selectedIndex = index
     }
 
     function reloadPageContent() { }

@@ -90,8 +90,10 @@ MainView {
 
     // TODO BUG
     function editFeed(feedid, title, url, pTopicId, srcPage) {
-        editFeed.setValues(feedid, title, url, pTopicId)
-        pageStack.push(editFeed, srcPage)
+        editFeedPageLoader.doAction( function(page) {
+            page.setValues(feedid, title, url, pTopicId)
+            pageStack.push(page, srcPage)
+        })
     }
 
     /* -------------------------- Visuals ---------------------------- */
