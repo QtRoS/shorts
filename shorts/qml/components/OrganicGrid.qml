@@ -304,7 +304,7 @@ Item {
 
         function clearTemporaries() {
 
-            // TODO Maybe mark all chains as idle before last idle.
+            // Maybe mark all chains as idle before last idle.
 
             var count = 0
             for (var i = 0; i < chains.length; i++) {
@@ -415,7 +415,7 @@ Item {
                 if (prevChain.freeSpace > chain.freeSpace) {
                     // console.log("PREV CHAIN HAVE MORE SPACE")
                     prevChain.freeSpace = chain.freeSpace
-                    prevChain.isIdle = chain.isIdle // ? TODO THINK
+                    prevChain.isIdle = chain.isIdle
                 }
             }
         }

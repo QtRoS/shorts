@@ -158,6 +158,7 @@ function deleteFeed(id)
     var db = openStdDataBase()
     var dbResult
     db.transaction(function (tx) {
+        dbResult = tx.executeSql('delete from feed_tag where feed_id=?', [id])
         dbResult = tx.executeSql('delete from feed where id=?', [id])
         console.log("feed delete, AFFECTED ROWS: ", dbResult.rowsAffected)
     })
@@ -569,8 +570,8 @@ function deleteTag(id)
     var db = openStdDataBase()
     var dbResult
     db.transaction(function (tx) {
-        dbResult = tx.executeSql('delete from tag WHERE id=?',
-                                 [id])
+        dbResult = tx.executeSql('delete from tag WHERE id=?', [id])
+
         console.log("tag delete, AFFECTED ROWS: ", dbResult.rowsAffected)
     })
     return dbResult

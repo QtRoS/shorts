@@ -271,8 +271,7 @@ MainView {
                 id: topicManagement
                 Connections {
                     target: topicManagement
-                    onFeedEdit: reloadMainView()
-                    onTopicDeleted: reloadMainView()
+                    onTopicDeleted: globalEventHandler.handleEvent(type)
                 }
             }
         }
@@ -307,6 +306,7 @@ MainView {
         id: globalEventHandler
 
         function handleEvent(type) {
+            console.log("globalEventHandler", type)
             switch(type)
             {
             case "topicAdded":
@@ -320,6 +320,9 @@ MainView {
                 break;
             case "feedEdited":
                 topicManagementPageLoader.doAction(function(page) { page.reloadTopics() } )
+                break;
+            case "topicDeleted":
+                reloadMainView()
                 break;
             }
         }

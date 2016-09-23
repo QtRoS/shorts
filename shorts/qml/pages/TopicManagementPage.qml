@@ -63,9 +63,7 @@ Page {
         ]
     }
 
-    // TODO BUG
-    signal feedEdit(int topicId)
-    signal topicDeleted()
+    signal topicDeleted(string type)
 
     Component.onCompleted: {
         reloadTopics ()
@@ -82,7 +80,7 @@ Page {
 
     function removeModelItem (modelIndex){
         topicModel.remove(modelIndex)
-        topicDeleted()
+        topicDeleted("topicDeleted")
     }
 
     function reloadPageContent() {
@@ -188,11 +186,6 @@ Page {
                             topicManagement.state = "default"
                             topicList.currentIndex = -1
                         }
-
-                        onFeedDeleted: {
-                            feedEdit(model.id)
-                        }
-
                     }
 
                     Connections {
@@ -212,8 +205,6 @@ Page {
 //                            if (model.id == newTopicId || model.id == previousTopicId){
 //                                topicItem.reloadFeed()
 //                                topicItem.isExpanded = true
-//                                feedEdit(previousTopicId)
-//                                feedEdit(newTopicId)
 //                            }
 //                        }
 //                    }
