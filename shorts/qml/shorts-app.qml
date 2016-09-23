@@ -319,6 +319,7 @@ MainView {
                 //networkManager.updateFeeds(addedFeeds, topicId)
                 break;
             case "feedEdited":
+                reloadMainView()
                 topicManagementPageLoader.doAction(function(page) { page.reloadTopics() } )
                 break;
             case "topicDeleted":

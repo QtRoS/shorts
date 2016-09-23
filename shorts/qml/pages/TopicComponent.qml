@@ -7,13 +7,6 @@ import "../utils/databasemodule_v2.js" as DB
 Column {
     id: topicComponentRoot
 
-    anchors {
-        left: parent.left
-        right: parent.right
-    }
-
-    height: columnContent.height + feedList.height
-
     property bool isExpanded: false
     property string topicName
     property int topicId
@@ -21,13 +14,8 @@ Column {
 
     signal edit()
     signal editCanceled()
-    signal feedDeleted()
 
-    onStateChanged:{
-        if (isExpanded){
-            reloadFeed()
-        }
-    }
+    onStateChanged: if (isExpanded) reloadFeed()
 
     function reloadFeed (){
         feedModel.clear()
@@ -67,6 +55,11 @@ Column {
         cancelEdit()
     }
 
+    anchors {
+        left: parent.left
+        right: parent.right
+    }
+    height: columnContent.height + feedList.height
 
     ListItem {
         id: topicComponent
@@ -77,22 +70,7 @@ Column {
             actions: [
                 Action {
                     iconName: "delete"
-                    onTriggered: {
-                        console.log("item about to be removed: ", topicComponentRoot.topicId)
-
-                        var mi = topicComponentRoot.modelIndex
-                        var result = DB.deleteFeedByTagId(topicComponentRoot.topicId)
-                        if (!result.rowsAffected) {
-                            topicManagement.reloadTopics()
-                        }
-
-                        result = DB.deleteTag(topicComponentRoot.topicId)
-                        if (result.rowsAffected == 1) {
-                            topicManagement.removeModelItem(mi)
-                        } else {
-                            topicManagement.reloadTopics()
-                        }
-                    }
+                    onTriggered: topicManagement.removeTopic(topicComponentRoot.topicId, topicComponentRoot.modelIndex)
                 }
             ]
         }
@@ -201,7 +179,7 @@ Column {
      * collapse it first.
      */
         onContentMovementStarted: {
-//            isExpanded = false
+            //            isExpanded = false
             editCanceled()
         }
     }
@@ -244,14 +222,15 @@ Column {
             FeedComponent {
                 id: feedItem
                 text: model.title
-                feedId: model.id
-                topicId: delegateFeed.topicId
                 width: topicList.width
                 height: units.gu(6)
 
-                onClicked: {
-                    //mainView.editFeed(model.id, model.title, model.source, delegateFeed.topicId, topicManagement)
+                onDeleteClicked: {
+                    topicManagement.removeFeed(model.id)
+                    reloadFeed()
+                }
 
+                onClicked: {
                     editFeedPageLoader.doAction( function(page) {
                         page.setValues(model.id, model.title, model.source, delegateFeed.topicId)
                         pageStack.push(page, topicManagement)

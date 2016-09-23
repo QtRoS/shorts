@@ -78,9 +78,16 @@ Page {
         }
     }
 
-    function removeModelItem (modelIndex){
+    function removeTopic(topicId, modelIndex){
         topicModel.remove(modelIndex)
+        DB.deleteFeedByTagId(topicId)
+        DB.deleteTag(topicId)
         topicDeleted("topicDeleted")
+    }
+
+    function removeFeed(feedId) {
+        var result = DB.deleteFeed(feedId)
+        topicDeleted("topicDeleted") // Actually feed is deleted, but it is ok.
     }
 
     function reloadPageContent() {

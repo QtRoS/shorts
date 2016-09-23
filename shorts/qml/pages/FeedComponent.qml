@@ -5,12 +5,11 @@ import "../utils/databasemodule_v2.js" as DB
 ListItem {
     id: feedComponent
 
-    property string text
-    property int feedId
-    property int topicId
+    signal deleteClicked
+    property alias text: lblTitle.text
 
     Label {
-        text: feedComponent.text
+        id: lblTitle
         anchors.verticalCenter: parent.verticalCenter
         anchors.leftMargin: units.gu(3)
         anchors.left: parent.left
@@ -20,12 +19,7 @@ ListItem {
         actions: [
             Action {
                 iconName: "delete"
-                onTriggered: {
-                    var result = DB.deleteFeed(feedId)
-                    if (result.rowsAffected == 1)
-                        feedDeleted()
-                    topicComponentRoot.reloadFeed()
-                }
+                onTriggered: deleteClicked()
             }
         ]
     }
