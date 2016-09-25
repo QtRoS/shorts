@@ -31,6 +31,8 @@ OTHER_FILES += ..\shorts.apparmor \
     qml/components/PageLoader.qml \
     qml/components/ReadingOptions.qml \
     qml/components/DarkModeShader.qml \
+    qml/components/FeedComponent.qml \
+    qml/components/TopicComponent.qml \
     qml/delegates/ArticleFullImg.qml \
     qml/delegates/ArticleOneImgA.qml \
     qml/delegates/ArticleTextA.qml \
@@ -40,10 +42,8 @@ OTHER_FILES += ..\shorts.apparmor \
     qml/pages/ChooseTopicPage.qml \
     qml/pages/CreateTopicPage.qml \
     qml/pages/EditFeedPage.qml \
-    qml/pages/FeedComponent.qml \
     qml/pages/SwipeDelete.qml \
     qml/pages/YadLoginPage.qml \
-    qml/pages/TopicComponent.qml \
     qml/tabs/BaseTab.qml \
     qml/tabs/SavedTab.qml \
     qml/tabs/ShortsTab.qml \
@@ -107,4 +107,5 @@ HEADERS += \
 
 DISTFILES += \
     qml/content/YadSyncHelper.qml \
-    qml/components/PageLoader.qml
+    qml/components/PageLoader.qml \
+    qml/nongoogle/PositionDialog.qml

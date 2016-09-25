@@ -42,11 +42,11 @@ Item {
                     SlotsLayout.overrideVerticalPositioning: true
 
                     y: units.gu(2)
-                    height: units.gu(14) + units.dp(4)
-                    width: units.gu(14) + units.dp(4)
+                    height: units.gu(14)
+                    width: units.gu(14)
                     color: "transparent"
                     border {
-                        width: units.dp(2)
+                        width: units.dp(1)
                         color: listItem.useNoImageIcon || pic.status == Image.Loading ? "transparent" : (model.status == "1" ? "lightgrey" : "#EB6536")
                     }
 
@@ -54,8 +54,11 @@ Item {
                         id: pic
 
                         fillMode: Image.PreserveAspectCrop
-                        height: units.gu(14)
-                        width: units.gu(14)
+                        anchors {
+                            fill: parent
+                            margins: units.dp(1)
+                        }
+
                         sourceSize {
                             width: height * 2
                             //height: units.gu(20)

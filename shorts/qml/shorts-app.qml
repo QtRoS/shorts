@@ -334,6 +334,7 @@ MainView {
 
         onDownloadFinished: {
             reloadViews(tagId)
+            reloadMainView()
         }
 
         onDownloadStarted: {
@@ -344,11 +345,6 @@ MainView {
     OptionsKeeper {
         id: optionsKeeper
     }
-
-    // Positioner to detect current position
-//    Positioner {
-//        id: positionDetector
-//    }
 
     /* -------------------------- Components ---------------------------- */
 
@@ -401,35 +397,6 @@ MainView {
                 text: i18n.tr("Ok")
                 objectName: "errordialogbutton"
                 onClicked: PopupUtils.close(errorDialog)
-            }
-        }
-    } // Component
-
-    ////////////////////////////////////////////////////////  a dialog to ask user if she/he wants to turn off the google search
-    Component {
-        id: componentDialogNG
-
-        Dialog {
-            id: dialogNG
-            title: i18n.tr("Warning")
-            text: i18n.tr("Shorts detects that you're located in an area which blocks Google's IP.<br><br>"
-                          + "We strongly recommend you to turn off the Google search funtion."
-                          + "Or you can do it in the settings page manually.")
-
-            Button {
-                text: i18n.tr("Yes, please.")
-                color: UbuntuColors.orange
-                objectName: "dialogNGButtonYes"
-                onClicked: {
-                    optionsKeeper.useGoogleSearch = false
-                    PopupUtils.close(dialogNG)
-                }
-            }
-
-            Button {
-                text: i18n.tr("No, thanks.")
-                objectName: "dialogNGButtonNo"
-                onClicked: PopupUtils.close(dialogNG)
             }
         }
     } // Component

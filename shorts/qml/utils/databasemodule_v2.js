@@ -201,7 +201,7 @@ function loadArticles(params)   // params = {"isAll": true/false, "feedId": id |
     var db = openStdDataBase()
     var dbResult
 
-    console.log("loadArticles", JSON.stringify(params))
+    //console.log("loadArticles", JSON.stringify(params))
 
     db.transaction(function(tx) {
         if (params == undefined || params.isAll) // miss params

@@ -9,6 +9,8 @@
         <file>qml/components/OptionsKeeper.qml</file>
         <file>qml/components/OrganicGrid.qml</file>
         <file>qml/components/ReadingOptions.qml</file>
+        <file>qml/components/FeedComponent.qml</file>
+        <file>qml/components/TopicComponent.qml</file>
         <file>qml/delegates/ArticleFullImg.qml</file>
         <file>qml/delegates/ArticleOneImgA.qml</file>
         <file>qml/delegates/ArticleTextA.qml</file>
@@ -18,9 +20,7 @@
         <file>qml/pages/ChooseTopicPage.qml</file>
         <file>qml/pages/CreateTopicPage.qml</file>
         <file>qml/pages/EditFeedPage.qml</file>
-        <file>qml/pages/FeedComponent.qml</file>
         <file>qml/pages/MainPage.qml</file>
-        <file>qml/pages/TopicComponent.qml</file>
         <file>qml/pages/TopicManagementPage.qml</file>
         <file>qml/tabs/BaseTab.qml</file>
         <file>qml/tabs/SavedTab.qml</file>

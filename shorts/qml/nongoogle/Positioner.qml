@@ -97,7 +97,7 @@ Item {
 
                     if (countryCode == "China") {
                         if (optionsKeeper.useGoogleSearch) {
-                            PopupUtils.open(componentDialogNG, pageStack)
+                            PopupUtils.open("PositionDialog.qml", pageStack)
                         }
                     }
                 }

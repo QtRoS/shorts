@@ -4,6 +4,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Layouts 1.0
 
+import "../components"
 import "../utils/databasemodule_v2.js" as DB
 
 Page {
@@ -65,9 +66,7 @@ Page {
 
     signal topicDeleted(string type)
 
-    Component.onCompleted: {
-        reloadTopics ()
-    }
+    Component.onCompleted: reloadTopics ()
 
     function reloadTopics () {
         topicModel.clear()
@@ -203,19 +202,6 @@ Page {
                             delegateRoot.isExpanded = false
                         }
                     }
-
-//                    Connections {
-//                        id: connEditFeed0
-//                        target: editFeed
-                        // TODO BUG
-//                        onApply:{
-//                            if (model.id == newTopicId || model.id == previousTopicId){
-//                                topicItem.reloadFeed()
-//                                topicItem.isExpanded = true
-//                            }
-//                        }
-//                    }
-
                 }
             }
 

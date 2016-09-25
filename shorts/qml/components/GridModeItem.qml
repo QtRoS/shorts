@@ -32,12 +32,11 @@ Item {
                 width: parent.width - units.gu(2)
                 height: parent.height - units.gu(2)
                 anchors.centerIn: parent
-                color: model.status == "1" ? "#e5e4e5" : "#D6BCD3"
 
-//                border {
-//                    width: units.dp(2)
-//                    color: (model.status == "1" ? "lightgrey" : "#EB6536")
-//                }
+                border {
+                    width: units.dp(1)
+                    color: model.status == "1" ? "lightgrey" : "#EB6536"
+                }
 
                 Rectangle {
                     z: -1
@@ -52,8 +51,10 @@ Item {
                     id: uPic
 
                     anchors {
+                        top: parent.top
                         left: parent.left
                         right: parent.right
+                        margins: units.dp(1)
                     }
                     height: pic.height
                     opacity: height
@@ -172,16 +173,5 @@ Item {
             fitAmount = fitAmount || 1 // Boilerplate code.
             cellHeight = Math.floor( 1.0 * height / fitAmount)
         }
-//        onHeightChanged: {
-//            var baseHeight = units.gu(22)
-//            var smallItemHeight = Math.floor(0.85 * baseHeight)
-//            var fitAmount = Math.floor(height / smallItemHeight)
-//            fitAmount = fitAmount || 1 // Boilerplate code.
-//            var calculatedHeight = Math.floor( 1.0 * height / fitAmount)
-//            var scaleFactor = calculatedHeight / baseHeight
-//            console.log(height, smallItemHeight, fitAmount, calculatedHeight, units.gu(22) * scaleFactor, scaleFactor)
-//            cellWidth = units.gu(26) // * scaleFactor
-//            cellHeight = calculatedHeight
-//        }
     } // GridView
 }

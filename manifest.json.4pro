@@ -9,7 +9,7 @@
             "desktop": "shorts.desktop"
         }
     },
-    "version": "3.3.3",
+    "version": "3.3.4",
     "maintainer": "Roman Shchekin <mrqtros@gmail.com>",
     "framework": "ubuntu-sdk-15.04.4"
 }
