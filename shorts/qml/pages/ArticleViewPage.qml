@@ -27,7 +27,7 @@ Page {
         trailingActionBar.actions: [
             Action {
                 text:  i18n.tr("Open site")
-                iconName: "go-to"
+                iconName: "external-link"
                 onTriggered: {
                     Qt.openUrlExternally(innerArticleView.modelItem.link)
                 }

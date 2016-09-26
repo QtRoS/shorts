@@ -28,7 +28,7 @@ Item {
 
             property bool useNoImageIcon: !model.image
 
-            height: units.gu(20)
+            height: units.gu(18)
             onClicked: mainView.showArticle(listViewModel, model.index)
 
 
@@ -41,9 +41,9 @@ Item {
                     SlotsLayout.position: SlotsLayout.Leading
                     SlotsLayout.overrideVerticalPositioning: true
 
-                    y: units.gu(2)
-                    height: units.gu(14)
-                    width: units.gu(14)
+                    anchors.verticalCenter: parent.verticalCenter
+                    height: units.gu(12)
+                    width: units.gu(12)
                     color: "transparent"
                     border {
                         width: units.dp(1)
@@ -103,22 +103,23 @@ Item {
                 }
 
                 title {
+                    id: txtTitle
                     text: model.title
                     wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                     fontSize: "small"
                     textFormat: Text.PlainText
                     font.weight: Font.DemiBold
                     elide: Text.ElideRight
-                    maximumLineCount: 3
+                    maximumLineCount: 2
                 }
 
                 subtitle {
-                    text: model.content //model.feed_name
+                    text: model.content
                     fontSize: "x-small"
                     textFormat: Text.PlainText
                     wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                     elide: Text.ElideRight
-                    maximumLineCount: 5
+                    maximumLineCount: txtTitle.lineCount > 1 ? 4 : 5
                 }
 
                 summary {
